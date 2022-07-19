@@ -10,7 +10,7 @@ p.hello{
 }
 .hello:hover{
     transform: scale(1.1);
-    color: rgb(32, 155, 142);
+    color: rgb(233, 8, 125);
 }
 .text {
     position: relative;
@@ -45,7 +45,7 @@ ul.text a:hover{
     width: 400px;
     height: 300px;
     position: absolute;
-    top: 470px;
+    margin: 290px;
     margin-left: -22rem;
 }
 div.docs p{

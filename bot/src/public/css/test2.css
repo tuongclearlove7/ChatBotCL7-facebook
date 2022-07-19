@@ -1,5 +1,6 @@
 html{
     background-image: url("bg3.jpg");
+    
     text-align: center;
 }
 *{
@@ -8,7 +9,7 @@ html{
 }
 div.between{
     background-color: black;
-    width: 100%;
+    width: 200%;
     height: 65px;
     margin: auto;
     padding-bottom: 0px;
