@@ -1,0 +1,96 @@
+html{
+    background-image: url("bg3.jpg");
+    text-align: center;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+div.between{
+    background-color: black;
+    width: 100%;
+    height: 65px;
+    margin: auto;
+    padding-bottom: 0px;
+}
+div.between a{
+    color: white;
+    font-size: 30px;
+}
+div.home{
+    margin: 5px;
+    padding: 0px;
+    position: absolute;
+    top: 15px;
+    left: 13px;
+}
+.home a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+div.home a:hover{
+    color: rgb(30, 172, 177);
+}
+div.home a.menu:hover{
+    color: white;
+}
+
+div.icon a{
+    top: -40px;
+    left: -4rem;
+    color: white;
+    position: relative;
+    text-decoration: none;
+}
+div.icon a:hover{
+    color: blueviolet;
+}
+
+div.icon2 a{
+    top: -56px;
+    left: -30px;
+    color: white;
+    position: relative;
+    text-decoration: none;
+}
+div.icon2 a:hover{
+    color: rgb(255, 0, 115);
+}
+
+div.icon3 a{
+    top: -72px;
+    left: 7px;
+    color: white;
+    position: relative;
+    text-decoration: none;
+}
+div.icon3 a:hover{
+    color: blue;
+}
+
+div.icon4 a{
+    top: -88px;
+    left: 40px;
+    color: white;
+    position: relative;
+    text-decoration: none;
+}
+div.icon4 a:hover{
+    color: rgb(0, 149, 255);   
+}
+
+div.icon5 a{
+    top: -104px;
+    left: 70px;
+    color: white;
+    position: relative;
+    text-decoration: none;
+}
+div.icon5 a:hover{
+    color: silver;   
+}
+hr.le{
+    top: -82px;
+    position: relative;
+}
