@@ -119,6 +119,9 @@ div.icon5 a:hover{
     font-size: 10px;
     z-index: 1;
 }
+#demo:hover{
+    color: white;
+}
 hr.le{
     z-index: 1;
     top: 50px;
