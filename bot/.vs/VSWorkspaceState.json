@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\config",
+    "\\src\\controller",
+    "\\src\\views"
+  ],
+  "SelectedNode": "\\src\\controller\\chatbotcontroller.js",
+  "PreviewInSolutionExplorer": false
+}

@@ -11,12 +11,22 @@
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
   </head>
     <body>
-      <video autoplay loop playsinline id="myvideo" ><source src="css/video2.mp4" type="video/mp4">/></video>
+      <video autoplay loop playsinline id="my-bg"  onplay="ready()"><source src="css/video2.mp4" type="video/mp4">/></video>
         <div class="between">
           </div>
           <div class="home">
             <a class="fa fa-home" href=""></a>
-            <a class="menu" href="">Home</a>
+            <a class="menu"  href="">Play</a>
+            <script>
+              // $(document).ready(function(myvideo) {
+              //   document.getElementById("my-bg"); 
+              //   myvideo.play(); 
+              //   });
+              // let on = alert("bấm ok để bật background động");
+              // if(on) {
+              //    playvideo();
+              // }
+          </script>
             </div>
           <div class="icon"><a class="fa fa-github" href="https://github.com/tuongclearlove7"></a></div>   
           <div class="icon2"><a class="fa fa-instagram" href="https://www.instagram.com/"></a></div>  
@@ -24,7 +34,7 @@
           <div class="icon4"> <a class="fa fa-twitter" href="https://twitter.com/?lang=vi"></a></div>  
           <div class="icon5"><a class="fa fa-apple" href="https://www.apple.com/"></a></div>
           <div class="Time-line">
-            <p id="demo"></p>
+            <p id="my-time"></p>
             <script>
             let date = new Date();
             let hours = date.getHours();
@@ -32,34 +42,39 @@
             let seconds = date.getSeconds();
             let president = `Time : ${hours}:${minutes}:${seconds}`;
             console.log(president);
-            document.getElementById("demo").innerHTML = president;
+            document.getElementById("my-time").innerHTML = president;
             </script>
           </div>
         <hr class="le"> 
         <div class="hello">
-          <p>Vô đây cẩn thận bị hack nick đó nha hahaha</p>
+          <a href="">ĐELL CÓ GÌ TRONG ĐÂY ĐÂU ĐỪNG VÔ KẺO MẤT NICK</a>
         </div>
-        <iframe class="frame" src='https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F117828560890633%2Fphotos%2Fa.117828614223961%2F117828830890606%2F&show_text=true&width=500' style='border:none;overflow:hidden' scrolling='no' frameborder='0' allowfullscreen='true' allow='autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share'></iframe> 
-        <iframe  class="frame2" src="https://www.youtube.com/embed/us8kABcQ_Pk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-       
-      <ul class="text">
-        <h4>My interest</h4>
-        <a href="https://vi.wikipedia.org/wiki/%C4%90%E1%BB%99i_tuy%E1%BB%83n_b%C3%B3ng_%C4%91%C3%A1_qu%E1%BB%91c_gia_Vi%E1%BB%87t_Nam">Football</a><br>
-        <a href="https://www.wikihow.com/Code">Write code</a><br>
-        <a href="https://www.codelean.vn/">Learn code</a><br>
-        <a href="https://vi.wikipedia.org/wiki/T%E1%BA%A5n_c%C3%B4ng_t%E1%BB%AB_ch%E1%BB%91i_d%E1%BB%8Bch_v%E1%BB%A5">Attack internet</a><br>
-        <a href="https://appwrite.io/"> Write App</a>
-      </ul> 
+        <iframe class="frame" src='https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F117828560890633%2Fphotos%2Fa.117828614223961%2F117828830890606%2F&show_text=true&width=500' style='border:none;overflow:hidden' scrolling='no' frameborder='0' allowfullscreen='true' allow='autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share'></iframe>        
+        <iframe class="frame2" src="https://www.youtube.com/embed/hK4zJx1Hwbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <a  href=""><h4>
+          My interest
+        </h4>
+        </a>
+        <div class="text">
+          <a href="https://vi.wikipedia.org/wiki/%C4%90%E1%BB%99i_tuy%E1%BB%83n_b%C3%B3ng_%C4%91%C3%A1_qu%E1%BB%91c_gia_Vi%E1%BB%87t_Nam">Football</a><br>
+          <a href="https://www.wikihow.com/Code">Write code</a><br>
+          <a href="https://www.codelean.vn/">Learn code</a><br>
+          <a href="https://vi.wikipedia.org/wiki/T%E1%BA%A5n_c%C3%B4ng_t%E1%BB%AB_ch%E1%BB%91i_d%E1%BB%8Bch_v%E1%BB%A5">Attack internet</a><br>
+          <a href="https://appwrite.io/"> Write App</a>
+        </div>
     <br>
-    <p class="docs">Đây là trang web do tôi code nó là trang web (front-end) của bot chat facebook , trang web chính thức ra đời ngày 19/7/2022
-      trang web này vẫn chưa hoàn thiện và vẫn đang được nâng cấp qua từng ngày , ai vô thăm trang thì nhớ để lại 1 like logo của tui
-      nhé thank you nhiều ❤️ hehehe
-    </p>
-</div>
-</div>
+    <div class="docs">
+
+      <p class="doc">Đây là trang web do tôi code nó là trang web (front-end) của bot chat facebook,
+        trang web (kéo xuống để xem tiếp) chính thức ra đời ngày 19/7/2022 trang web này vẫn 
+        chưa hoàn thiện và vẫn đang được nâng cấp qua từng ngày , ai vô thăm trang thì nhớ để lại 1 like logo của tui
+         nhé thank you nhiều ❤️ hehehe
+      </p>
+    </div>
+
 </body>
 <div class="con">
-  <p class="license">© By Clearlove7. BotChat-Facebook 2022</p>
+  <a  href="" class="license">© By Clearlove7. BotChat-Facebook 2022</a> 
 </div>
 </html>
 

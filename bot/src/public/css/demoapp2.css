@@ -1,4 +1,4 @@
-#myvideo {
+#my-bg {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -7,6 +7,74 @@
     object-fit: cover;
     z-index: -1;
 }
+#my-bg2 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.but {
+    width: 42px;
+    position: fixed;
+    z-index: 2;
+    left: 0px;
+    top: 50px;
+    font-size: 10px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+}
+
+.but:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.but:active {
+    color: #000
+}
+
+.but:active:after {
+    background: transparent;
+}
+
+.but:hover:before {
+    opacity: 1;
+}
+
+.but:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
 .hello{
     padding: 0px;
     margin: 0px;
@@ -14,32 +82,38 @@
     font-size: 30px;
     top: 6rem;
     text-align: center;
-    color: white;
 }
-.hello p {
+.hello a {
+    color: white;
     font-family: fantasy;
 }
-.hello p:hover{
+.hello a:hover{
     color: rgb(233, 8, 125);
 }
-.text a{
-    position: relative;
-    top: 33rem;
-    text-align: center;
-    text-decoration: none;
-    line-height: inherit;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
-}
-
-h4{
+a h4{
     cursor: pointer;
     position: relative;
     top: 32rem;
     color: red;
     font-size: 20px;
 }
-ul.text a:hover{
+a{
+    text-decoration: none;
+}
+
+.text {
+    position: relative;
+    top: 33rem;
+    text-align: center;
+}
+.text a{
+    width: 15%;
+    text-decoration: none;
+    line-height: inherit;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+div.text a:hover{
     color: rgb(96, 96, 211);
     text-decoration: underline;
 }
@@ -57,44 +131,60 @@ ul.text a:hover{
 .frame2{
     width: 300px;
     height: 300px;
-    position: absolute;
-    box-shadow: 0 0 0 10px rgb(255 255 255 / 50%);
-    margin: 480px;
-    margin-left: -300px;
-}
-.docs {
     position: relative;
-    top: 34rem;
+    box-shadow: 0 0 0 10px rgb(255 255 255 / 50%);
+    margin: 0px 0px 0px -304px;
+    top: 30rem;
+    /* margin-left: -300px; */
+}
+.doc{
+    overflow: scroll;
+    position: relative;
+    padding: 11px;
+    padding-top: 0px;
+    bottom: -34rem;
     margin: auto;
-    width: 50%;
+    width: 300px;
+    height: 100px;
     display: flex;
-    color: white;
+    background-color: aliceblue;
+    color: black;
     font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
+    box-shadow: 0 0 0 10px rgb(255 255 255 / 50%);
+    
+}
+.docs{
+    position: relative;
 }
 .con {
-    position: relative;
-    top: 35rem;
+    position: fixed;
+    bottom: 0rem;
     width: 100%;
-    margin: 0 auto;
+    margin: 0px auto;
     height: 20px;
     background-color: white;
+    z-index: 0;
 }
 .license{
-    top: 3px;
     left: 0rem;
+    bottom: 5px;
     width: 100%;
-    object-fit: cover;  
+    object-fit: cover;
     text-decoration: none;
     color: rgb(73, 73, 73);
     display: flex;
     font-size: 11px;
-    position: relative;
+    position: fixed;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
 }
 .license:hover{
     color: rgb(255, 0, 76);
 }
+
+
+
 
 
 

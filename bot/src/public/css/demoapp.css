@@ -11,7 +11,7 @@ html{
 
 div.between{
     position: fixed;
-    background-color: black;
+    background-color: #111;
     width: 100%;
     height: 50px;
     margin: 0px 0px 0px 0px;
@@ -107,19 +107,29 @@ div.icon5 a{
 div.icon5 a:hover{
     color: silver;   
 }
-.Time-line p{
-    position: fixed;
-    top: 20px;
-    right: 8px;
+/* .Time-line p{
+    
+} */
+.Time-line{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: 30px;
+    left: 130px;
+    width: 10%;
+    
 }
-#demo{
+#my-time{
+    position: fixed;
+    top: 22px;
+    right: 7px;
     color: rgb(22, 176, 210);
     font-family: ui-monospace;
     display: flex;
     font-size: 10px;
     z-index: 1;
 }
-#demo:hover{
+#my-time:hover{
     color: white;
 }
 hr.le{

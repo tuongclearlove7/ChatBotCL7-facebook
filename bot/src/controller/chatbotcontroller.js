@@ -1,4 +1,5 @@
 require("dotenv").config();
+import db from '../models/index.js';
 import { table } from "console";
 import { response, text } from "express";
 import res, { get } from "express/lib/response";
@@ -9,8 +10,19 @@ const fs = require("fs");
 const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
 let VERIFY_TOKEN = process.env.VERIFY_TOKEN;
 
-let getHomePage = (req,res)=>{
-   return res.render('demoapp.ejs');
+let getHomePage = async (req,res)=>{
+  try{
+    let data = await db.User.findAll();
+    console.log(data);
+    return res.render('demo.ejs',{
+           data:JSON.stringify(data)
+      });
+    }
+    catch(e){
+        console.log(e);
+      }
+    return res.render('demoapp.ejs')
+        
 }
 
 let postWebhook= (req,res)=>{
