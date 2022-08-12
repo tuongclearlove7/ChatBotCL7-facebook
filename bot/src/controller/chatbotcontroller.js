@@ -11,18 +11,17 @@ const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
 let VERIFY_TOKEN = process.env.VERIFY_TOKEN;
 
 let getHomePage = async (req,res)=>{
-  try{
-    let data = await db.User.findAll();
-    console.log(data);
-    return res.render('demo.ejs',{
-           data:JSON.stringify(data)
-      });
-    }
-    catch(e){
-        console.log(e);
-      }
-    return res.render('demoapp.ejs')
-        
+  // try{
+  //   let data = await db.User.findAll();
+  //   console.table(data);
+  //   return res.render('demo.ejs',{
+  //          data:JSON.stringify(data)
+  //     });
+  //   }
+  //   catch(e){
+  //      console.table(e);
+  //    }
+    return res.render('demoapp.ejs') 
 }
 
 let postWebhook= (req,res)=>{
@@ -202,52 +201,52 @@ let Uppertoxic = TOXIC.map(element => {
 
   var a = { 
       info: {
-          success: "thành công",age: "tuổi",successfully:"thành công",deploy:"triển khai",
-          install : "tải về",download:"tải xuống",fuck : "chết tiệt",page : "trang",
-          mark : "dấu",snake : SearchBot[28],my : "mãi mãi",socket : "ổ cắm",
-          pass : "qua , đưa qua, cho qua",local : "cục bộ, địa phương",password : "mật khẩu",
-          archive : "lưu trữ",tets : SearchBot[27],standalone : "Độc lập",information : "thông tin",
-          system : "hệ thống",job : "công việc",mountain:"núi",tree:"cây ",rush:"cây bấc",
-          technical : "kỹ thuật",technology : "công nghệ", invironment : "môi trường",scene : "bối cảnh",
-          screen : "màn hình",component : "thành phần", comment : "bình luận",code : "mã", launch:"phóng",
-          source : "nguồn",commit:"cam kết",book : "sách",place : "vị trí",marketplace : "thường trường",
-          market : "thị trường , chợ",supermarket:"siêu thị",exchange : "giao lưu", chat : "trò chuyện",
-          trash : "rác rưởi", garbage : "rác",know : "biết",get : "mắc phải",request : "yêu cầu",
-          quick : "nhanh chóng", test : "thử",use : "sử dụng", user:"người dùng",graphic : "đồ họa",
-          config:"cấu hình",inter : "chôn cất",face : "mặt, đối mặt", pointer : "con trỏ",
-          falcon : "chim ưng", heave : "phập phồng",hear : "nghe",match : "trận đấu",math : "toán",
-          twist : "vặn",change : "thay đổi",none : "không ai",null : "vô giá trị",view : "lượt xem",
-          see : "trông thấy , xem",active:"tích cực",negative : "từ chối",service : "dịch vụ",
-          engine : "động cơ",game : "trò chơi",play : "chơi",player : "người chơi",work : "công việc , làm việc",
-          convert : "chuyển đổi",for : "vì",because:"bởi vì",beautiful:"đẹp , xinh đẹp",bad : "tệ",
-          so : "rất",sad : "buồn bã",disappointed : "thất vọng ",native : "tự nhiên",control :"điều khiển",
-          express : "bày tỏ",expression : "biểu hiện",ruler : "cây thước",rule : "luật lệ",water : "nước",
-          football : "bóng đá",soccer : "đá bóng",liquid : "chất lỏng",clear : "thông thoáng , xóa, quét",
-          clean :"dọn dẹp",love : "yêu",nice : "đẹp",good : "tốt",an :"một",A : "1",find : "tìm , tìm thấy",
-          more: "hơn",most :"hầu hết",stop : "dừng lại",next : "tiếp tục, kế tiếp",mess :"sự lộn xộn",
-          message : "tin nhắn",massage : "mát xa",comfortable:"thoải mái",very : "rất",done :"xong",
-          package:"bưu kiện",pack:"đóng gói",contruct : "xây dựng",submation:"sự phụ thuộc",
-          subtraction : "phép trừ",any : "không có gì",do:"làm",while:"trong khi",loop:"lặp, lặp lại",
-          perform:"thực hiện",flatform : "hình phẳng",flat:"bằng phẳng",form : "biểu mẫu",
-          template:"bản mẫu",temp:"nhân viên bán thời gian",tamed:"thuần hóa",Notification:"thông báo",
-          server:"máy chủ",remote:"xa xôi",verify:"xác minh",token:"mã thông báo",application:"ứng dụng",
-          software:"phần mềm",tool:"dụng cụ",login:"đăng nhập",signin:"đăng nhập",
-          console:"bàn điều khiển",extension:"sự mở rộng",explore:"khám phá",export:"xuất khẩu",
-          Attachment:"tập tin đính kèm",signup:"đăng ký",element : "các yếu tố",encode:"mã hóa",
-          decode:"giải mã",boot:"khởi động",root:"nguồn gốc",document:"tài liệu",directory:"danh mục",
-          dictionary:"từ điển",dict :"mệnh lệnh",direct:"trực tiếp",engineer : "kỹ sư",
-          spam:"❌ stop! không được spam ❌",VN: "Việt nam vô địch, Việt Nam number one1 😂",
-          war : "❌ stop! không được phép nói tục ❌",russia: SearchBot[30],Einstein:SearchBot[31],
-          newton:SearchBot[32],hacker:SearchBot[33],communism:`${received_message.text} : `+SearchBot[34],
-          stackoverflow:SearchBot[35],language:"ngôn ngữ",received:"nhận",program:"chương trình",programming:"lập trình",
-          foreign :"ngoại quốc",my :"của tôi",champion :'vô địch',lose  :"thua",win  :"thắng",height  :"chiều cao",width  :"chiều rộng",
-          main :"chính",origin :"gốc",value :"giá trị",default :"mặc định",navigator :"hao tiêu",
-          string :"chuỗi",integer :"số nguyên",decimal :"số thập phân",prime :"số nguyên tố",
-          print :'in',paint :"sơn",publish :"xuất bản",list :"danh sách",push :"đẩy",error :"lỗi",
-          warning :"cảnh báo",translate :"dịch",invite :"mời",cross :"đi qua",right :"phải",left :"trái",
-          intial :'bên trong',index :"mục lục",try :"thử",press :"nhấn",phising :"lừa đảo",
-          plugin :"cắm vào",upper :"viết hoa",lower :"viết thường",reserved :"kín đáo",property :"tài sản",
-          mason :"thợ nề",space :"khoảng cách, không gian",pain :"đau đớn",new :"mới",content :"nội dung",
+            success: "thành công",age: "tuổi",successfully:"thành công",deploy:"triển khai",
+            install : "tải về",download:"tải xuống",fuck : "chết tiệt",page : "trang",
+            mark : "dấu",snake : SearchBot[28],my : "mãi mãi",socket : "ổ cắm",
+            pass : "qua , đưa qua, cho qua",local : "cục bộ, địa phương",password : "mật khẩu",
+            archive : "lưu trữ",tets : SearchBot[27],standalone : "Độc lập",information : "thông tin",
+            system : "hệ thống",job : "công việc",mountain:"núi",tree:"cây ",rush:"cây bấc",
+            technical : "kỹ thuật",technology : "công nghệ", invironment : "môi trường",scene : "bối cảnh",
+            screen : "màn hình",component : "thành phần", comment : "bình luận",code : "mã", launch:"phóng",
+            source : "nguồn",commit:"cam kết",book : "sách",place : "vị trí",marketplace : "thường trường",
+            market : "thị trường , chợ",supermarket:"siêu thị",exchange : "giao lưu", chat : "trò chuyện",
+            trash : "rác rưởi", garbage : "rác",know : "biết",get : "mắc phải",request : "yêu cầu",
+            quick : "nhanh chóng", test : "thử",use : "sử dụng", user:"người dùng",graphic : "đồ họa",
+            config:"cấu hình",inter : "chôn cất",face : "mặt, đối mặt", pointer : "con trỏ",
+            falcon : "chim ưng", heave : "phập phồng",hear : "nghe",match : "trận đấu",math : "toán",
+            twist : "vặn",change : "thay đổi",none : "không ai",null : "vô giá trị",view : "lượt xem",
+            see : "trông thấy , xem",active:"tích cực",negative : "từ chối",service : "dịch vụ",
+            engine : "động cơ",game : "trò chơi",play : "chơi",player : "người chơi",work : "công việc , làm việc",
+            convert : "chuyển đổi",for : "vì",because:"bởi vì",beautiful:"đẹp , xinh đẹp",bad : "tệ",
+            so : "rất",sad : "buồn bã",disappointed : "thất vọng ",native : "tự nhiên",control :"điều khiển",
+            express : "bày tỏ",expression : "biểu hiện",ruler : "cây thước",rule : "luật lệ",water : "nước",
+            football : "bóng đá",soccer : "đá bóng",liquid : "chất lỏng",clear : "thông thoáng , xóa, quét",
+            clean :"dọn dẹp",love : "yêu",nice : "đẹp",good : "tốt",an :"một",A : "1",find : "tìm , tìm thấy",
+            more: "hơn",most :"hầu hết",stop : "dừng lại",next : "tiếp tục, kế tiếp",mess :"sự lộn xộn",
+            message : "tin nhắn",massage : "mát xa",comfortable:"thoải mái",very : "rất",done :"xong",
+            package:"bưu kiện",pack:"đóng gói",contruct : "xây dựng",submation:"sự phụ thuộc",
+            subtraction : "phép trừ",any : "không có gì",do:"làm",while:"trong khi",loop:"lặp, lặp lại",
+            perform:"thực hiện",flatform : "hình phẳng",flat:"bằng phẳng",form : "biểu mẫu",
+            template:"bản mẫu",temp:"nhân viên bán thời gian",tamed:"thuần hóa",Notification:"thông báo",
+            server:"máy chủ",remote:"xa xôi",verify:"xác minh",token:"mã thông báo",application:"ứng dụng",
+            software:"phần mềm",tool:"dụng cụ",login:"đăng nhập",signin:"đăng nhập",
+            console:"bàn điều khiển",extension:"sự mở rộng",explore:"khám phá",export:"xuất khẩu",
+            Attachment:"tập tin đính kèm",signup:"đăng ký",element : "các yếu tố",encode:"mã hóa",
+            decode:"giải mã",boot:"khởi động",root:"nguồn gốc",document:"tài liệu",directory:"danh mục",
+            dictionary:"từ điển",dict :"mệnh lệnh",direct:"trực tiếp",engineer : "kỹ sư",
+            spam:"❌ stop! không được spam ❌",VN: "Việt nam vô địch, Việt Nam number one1 😂",
+            war : "❌ stop! không được phép nói tục ❌",russia: SearchBot[30],Einstein:SearchBot[31],
+            newton:SearchBot[32],hacker:SearchBot[33],communism:`${received_message.text} : `+SearchBot[34],
+            stackoverflow:SearchBot[35],language:"ngôn ngữ",received:"nhận",program:"chương trình",programming:"lập trình",
+            foreign :"ngoại quốc",my :"của tôi",champion :'vô địch',lose  :"thua",win  :"thắng",height  :"chiều cao",width  :"chiều rộng",
+            main :"chính",origin :"gốc",value :"giá trị",default :"mặc định",navigator :"hao tiêu",
+            string :"chuỗi",integer :"số nguyên",decimal :"số thập phân",prime :"số nguyên tố",
+            print :'in',paint :"sơn",publish :"xuất bản",list :"danh sách",push :"đẩy",error :"lỗi",
+            warning :"cảnh báo",translate :"dịch",invite :"mời",cross :"đi qua",right :"phải",left :"trái",
+            intial :'bên trong',index :"mục lục",try :"thử",press :"nhấn",phising :"lừa đảo",
+            plugin :"cắm vào",upper :"viết hoa",lower :"viết thường",reserved :"kín đáo",property :"tài sản",
+            mason :"thợ nề",space :"khoảng cách, không gian",pain :"đau đớn",new :"mới",content :"nội dung",
           MyObject: function(){
               
           }

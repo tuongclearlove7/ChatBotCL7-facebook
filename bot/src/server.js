@@ -10,14 +10,14 @@ let app = express();
 
 viewEngine(app);
 
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
 
 initWrbrouter(app);
 connect_db();
 
-let port = process.env.PORT || 8081;
+let port = process.env.PORT || 8080;
 
 app.listen(port, () => {
     console.log("Bot is running on port : ", port);
