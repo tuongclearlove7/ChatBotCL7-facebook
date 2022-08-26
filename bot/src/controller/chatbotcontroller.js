@@ -225,13 +225,13 @@ let Uppertoxic = TOXIC.map(element => {
             clean :"dọn dẹp",love : "yêu",nice : "đẹp",good : "tốt",an :"một",A : "1",find : "tìm , tìm thấy",
             more: "hơn",most :"hầu hết",stop : "dừng lại",next : "tiếp tục, kế tiếp",mess :"sự lộn xộn",
             message : "tin nhắn",massage : "mát xa",comfortable:"thoải mái",very : "rất",done :"xong",
-            package:"bưu kiện",pack:"đóng gói",contruct : "xây dựng",submation:"sự phụ thuộc",
+            package:"bưu kiện",pack:"đóng gói",contruct : "xây dựng",submation:"sự phụ thuộc",//  navigator
             subtraction : "phép trừ",any : "không có gì",do:"làm",while:"trong khi",loop:"lặp, lặp lại",
             perform:"thực hiện",flatform : "hình phẳng",flat:"bằng phẳng",form : "biểu mẫu",
             template:"bản mẫu",temp:"nhân viên bán thời gian",tamed:"thuần hóa",Notification:"thông báo",
             server:"máy chủ",remote:"xa xôi",verify:"xác minh",token:"mã thông báo",application:"ứng dụng",
             software:"phần mềm",tool:"dụng cụ",login:"đăng nhập",signin:"đăng nhập",
-            console:"bàn điều khiển",extension:"sự mở rộng",explore:"khám phá",export:"xuất khẩu",
+            console:"bàn điều khiển",extension:"sự mở rộng",explore:"khám phá",export:"xuất khẩu",// 
             Attachment:"tập tin đính kèm",signup:"đăng ký",element : "các yếu tố",encode:"mã hóa",
             decode:"giải mã",boot:"khởi động",root:"nguồn gốc",document:"tài liệu",directory:"danh mục",
             dictionary:"từ điển",dict :"mệnh lệnh",direct:"trực tiếp",engineer : "kỹ sư",
@@ -245,7 +245,7 @@ let Uppertoxic = TOXIC.map(element => {
             print :'in',paint :"sơn",publish :"xuất bản",list :"danh sách",push :"đẩy",error :"lỗi",
             warning :"cảnh báo",translate :"dịch",invite :"mời",cross :"đi qua",right :"phải",left :"trái",
             intial :'bên trong',index :"mục lục",try :"thử",press :"nhấn",phising :"lừa đảo",
-            plugin :"cắm vào",upper :"viết hoa",lower :"viết thường",reserved :"kín đáo",property :"tài sản",
+            plugin :"cắm vào",upper :"viết hoa",lower :"viết thường",reserved :"kín đáo",property :"tài sản",//inter
             mason :"thợ nề",space :"khoảng cách, không gian",pain :"đau đớn",new :"mới",content :"nội dung",
           MyObject: function(){
               
