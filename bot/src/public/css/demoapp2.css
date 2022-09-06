@@ -10,11 +10,11 @@
 #my-bg2 {
     position: fixed;
     top: 0px;
-    left: 0px;
-    width: 100%;
+    right: 0px;
+    width: 50%;
     height: 100%;
     object-fit: cover;
-    z-index: -2;
+    z-index: -1;
 }
 .but {
     width: 42px;
@@ -77,19 +77,27 @@
 }
 .hello{
     padding: 0px;
-    margin: 0px;
-    position: relative;
-    font-size: 30px;
+    margin: auto;
+    left: 20px;
+    right: 0px;
+    width: 21%;
+    position: fixed;
+    font-size: 25px;
     top: 6rem;
     text-align: center;
 }
 .hello a {
-    color: white;
-    font-family: fantasy;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: -1px 0 white, 0 2px white, 2px 0 white, 0 -1px white;
+    transition: all 0.5s ease;
+    text-decoration: none;
 }
 .hello a:hover{
     color: rgb(233, 8, 125);
+    text-decoration: none;
 }
+
 a h4{
     cursor: pointer;
     position: relative;
@@ -119,8 +127,9 @@ div.text a:hover{
 }
 
 .frame{
-    z-index: 0;
+    z-index: 1;
     top: 150px;
+   
     left: 1px;
     width: 300px;
     height: 300px;
@@ -128,34 +137,94 @@ div.text a:hover{
     position: relative;
     box-shadow: 0 0 0 10px rgb(255 255 255 / 50%);
 }
-.frame2{
-    width: 300px;
-    height: 300px;
-    position: relative;
-    box-shadow: 0 0 0 10px rgb(255 255 255 / 50%);
-    margin: 0px 0px 0px -304px;
-    top: 30rem;
-    /* margin-left: -300px; */
-}
-.doc{
-    overflow: scroll;
-    position: relative;
-    padding: 11px;
-    padding-top: 0px;
-    bottom: -34rem;
-    margin: auto;
-    width: 300px;
-    height: 100px;
-    display: flex;
-    background-color: aliceblue;
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
+div.column1 {
+    display: table;
+    width: 100px;
+    position: fixed;
+    background-color: #1f1f1f;
+    opacity: 0.9;
+    height: 100%;
+    color: #fff;
+    margin: 55px 0px 0px 0px;
     cursor: pointer;
-    box-shadow: 0 0 0 10px rgb(255 255 255 / 50%);
-    
 }
-.docs{
-    position: relative;
+
+#about {
+    z-index: 0;
+    position: fixed;
+    text-decoration: none;
+    font-size: 25px;
+    left: 0px;
+    top: 100px;
+    width: 100px;
+    font-family: fantasy;
+    color: white;
+    transition: all 1s ease;
+}
+#about:hover{
+    background-color: whitesmoke;
+    color: #000;
+    border: 3px solid white;
+    opacity: 1;
+
+}
+
+#info {
+    z-index: 0;
+    position: fixed;
+    text-decoration: none;
+    font-size: 25px;
+    width: 100px;
+    font-family: fantasy;
+    left: 0px;
+    top: 200px;
+    color: white;
+    transition: all 1s ease;
+}
+#info:hover{
+    background-color: whitesmoke;
+    color: #000;
+    border: 3px solid white;
+    opacity: 1;
+
+}
+#skill {
+    z-index: 0;
+    position: fixed;
+    text-decoration: none;
+    font-size: 25px;
+    width: 100px;
+    left: 0px;
+    top: 300;
+    font-family: fantasy;
+    color: white;
+    transition: all 1s ease;
+}
+#skill:hover{
+    background-color: whitesmoke;
+    color: #000;
+    border: 3px solid white;
+    opacity: 1;
+
+}
+#my {
+    z-index: 0;
+    position: fixed;
+    text-decoration: none;
+    font-size: 20px;
+    width: 100px;
+    font-family: fantasy;
+    left: 0px;
+    top: 400;
+    color: white;
+    transition: all 1s ease;
+}
+#my:hover{
+    background-color: whitesmoke;
+    color: #000;
+    border: 3px solid white;
+    opacity: 1;
+
 }
 .con {
     position: fixed;
@@ -165,6 +234,7 @@ div.text a:hover{
     height: 20px;
     background-color: white;
     z-index: 0;
+
 }
 .license{
     left: 0rem;
@@ -181,7 +251,49 @@ div.text a:hover{
 }
 .license:hover{
     color: rgb(255, 0, 76);
+    text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

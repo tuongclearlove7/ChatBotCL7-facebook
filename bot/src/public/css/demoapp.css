@@ -1,6 +1,6 @@
 html{
-    text-align: center;
     background-size: 200%;
+    text-align: center;
 }
 *{
     padding: 0;
@@ -9,46 +9,79 @@ html{
     font-family: "Fredoka", serif;
 }
 
-div.between{
+.between{
     position: fixed;
-    background-color: #111;
-    width: 100%;
+    background-color: #00BCD4;
+    width: 100px;
     height: 50px;
     margin: 0px 0px 0px 0px;
-    z-index: 1;
+    transition: all 0.5s ease;
+    cursor: pointer;
 }
+.between:hover{
+    opacity: 1;
+    background-color: rgb(215 7 82);
+    
+}
+.between2{
+    position: fixed;
+    background-color:rgb(21 21 21);
+    width: 100%;
+    height: 50px;
+    margin: 0px 0px 0px 100px;
+    cursor: pointer;
+}
+.between2:hover{
+    transition: all 1s ease;
+    background-color: #454545;
+}
+
 div.between a{
     color: white;
-    font-size: 30px;
+    font-size: 25px;
+    text-decoration: none;
 }
 div.home{
-    z-index: 1;
+    
     margin: 0px;
     padding: 0px;
-    position:fixed;
+    position: fixed;
+    height: 0%;
+    top: 2px;
     left: 13px;
 }
 .home a{
-    z-index: 1;
+    
+    text-decoration: none;
+    font-size: 25px;
+    margin: auto;
+    top: 15px;
+    color: white;
+    position: relative;
+    transition: all 0.5s ease;
+}
+div.between div.home a:hover{
+    color:rgb(26, 241, 241);
+    font-size: 28px;
+}
+
+div.between .my-home a{
+    position: fixed;
+    color: white;
     text-decoration: none;
     font-size: 15px;
-    margin: 18px auto;
-    color: white;
-    position:
-    relative;
-}
-div.home a:hover{
-    color: rgb(30, 172, 177);
-}
-div.home a.menu:hover{
-    color: white;
+    left: 45px;
+    top: 22px;
+    z-index: 2;
 }
 
 div.icon a{
-    margin: 20px 0px 0px -75px;
+    margin: 20px 0px 0px -60px;
     color: white;
     font-size: 15px;
-    position:fixed;
+    position:
+    fixed;
+    transition: all 0.5s ease;
     text-decoration: none;
     z-index: 1;
 }
@@ -58,10 +91,11 @@ div.icon a:hover{
 
 div.icon2 a{
     z-index: 1;
-    margin: 20px 0px 0px -35px;
+    margin: 20px 0px 0px -28px;
     color: white;
     position:
     fixed;
+    transition: all 0.5s ease;
     font-size: 15px;
     text-decoration: none;
 }
@@ -75,6 +109,7 @@ div.icon3 a{
     color: white;
     position:
     fixed;
+    transition: all 0.5s ease;
     font-size: 15px;
     text-decoration: none;
 }
@@ -84,11 +119,12 @@ div.icon3 a:hover{
 
 div.icon4 a{
     z-index: 1;
-    margin: 20px 0px 0px 45px;
+    margin: 20px 0px 0px 35px;
     color: white;
     font-size: 15px;
     position:
     fixed;
+    transition: all 0.5s ease;
     text-decoration: none;
 }
 div.icon4 a:hover{
@@ -97,19 +133,18 @@ div.icon4 a:hover{
 
 div.icon5 a{
     z-index: 1;
-    margin: 20px 0px 0px 85px;
+    margin: 20px 0px 0px 65px;
     color: white;
     position:
     fixed;
+    transition: all 0.5s ease;
     font-size: 15px;
     text-decoration: none;
 }
 div.icon5 a:hover{
     color: silver;   
 }
-/* .Time-line p{
-    
-} */
+
 .Time-line{
     margin: 0px;
     padding: 0px;
@@ -123,10 +158,11 @@ div.icon5 a:hover{
     position: fixed;
     top: 22px;
     right: 7px;
-    color: rgb(22, 176, 210);
+    color: #34e9ee;
     font-family: ui-monospace;
     display: flex;
     font-size: 10px;
+    transition: all 0.5s ease;
     z-index: 1;
 }
 #my-time:hover{
@@ -138,4 +174,3 @@ hr.le{
     width: 100%;
     position: fixed;
 }
-

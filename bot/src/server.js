@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 
 initWrbrouter(app);
-connect_db();
+// connect_db();
 
 let port = process.env.PORT || 8080;
 

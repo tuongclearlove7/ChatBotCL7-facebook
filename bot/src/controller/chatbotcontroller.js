@@ -202,21 +202,21 @@ let Uppertoxic = TOXIC.map(element => {
   var a = { 
       info: {
             success: "thành công",age: "tuổi",successfully:"thành công",deploy:"triển khai",
-            install : "tải về",download:"tải xuống",fuck : "chết tiệt",page : "trang",
-            mark : "dấu",snake : SearchBot[28],my : "mãi mãi",socket : "ổ cắm",
+            install : "tải về",download:"tải xuống",fuck : "chết tiệt",page : "trang",horizontal:'nằm ngang, thuộc về chân trời',
+            mark : "dấu",snake : SearchBot[28],my : "mãi mãi",socket : "ổ cắm",depend:'tùy, tùy thuộc vào',
             pass : "qua , đưa qua, cho qua",local : "cục bộ, địa phương",password : "mật khẩu",
             archive : "lưu trữ",tets : SearchBot[27],standalone : "Độc lập",information : "thông tin",
-            system : "hệ thống",job : "công việc",mountain:"núi",tree:"cây ",rush:"cây bấc",
+            system : "hệ thống",job : "công việc",mountain:"núi",tree:"cây ",rush:"cây bấc",synchronized:'đồng bộ',
             technical : "kỹ thuật",technology : "công nghệ", invironment : "môi trường",scene : "bối cảnh",
             screen : "màn hình",component : "thành phần", comment : "bình luận",code : "mã", launch:"phóng",
             source : "nguồn",commit:"cam kết",book : "sách",place : "vị trí",marketplace : "thường trường",
             market : "thị trường , chợ",supermarket:"siêu thị",exchange : "giao lưu", chat : "trò chuyện",
             trash : "rác rưởi", garbage : "rác",know : "biết",get : "mắc phải",request : "yêu cầu",
             quick : "nhanh chóng", test : "thử",use : "sử dụng", user:"người dùng",graphic : "đồ họa",
-            config:"cấu hình",inter : "chôn cất",face : "mặt, đối mặt", pointer : "con trỏ",
+            config:"cấu hình",inter : "chôn cất",face : "mặt, đối mặt", pointer : "con trỏ",impossible:'không thể nào',
             falcon : "chim ưng", heave : "phập phồng",hear : "nghe",match : "trận đấu",math : "toán",
             twist : "vặn",change : "thay đổi",none : "không ai",null : "vô giá trị",view : "lượt xem",
-            see : "trông thấy , xem",active:"tích cực",negative : "từ chối",service : "dịch vụ",
+            see : "trông thấy , xem",active:"tích cực",negative : "từ chối",service : "dịch vụ",async:'không đồng bộ',
             engine : "động cơ",game : "trò chơi",play : "chơi",player : "người chơi",work : "công việc , làm việc",
             convert : "chuyển đổi",for : "vì",because:"bởi vì",beautiful:"đẹp , xinh đẹp",bad : "tệ",
             so : "rất",sad : "buồn bã",disappointed : "thất vọng ",native : "tự nhiên",control :"điều khiển",
@@ -227,27 +227,28 @@ let Uppertoxic = TOXIC.map(element => {
             message : "tin nhắn",massage : "mát xa",comfortable:"thoải mái",very : "rất",done :"xong",
             package:"bưu kiện",pack:"đóng gói",contruct : "xây dựng",submation:"sự phụ thuộc",//  navigator
             subtraction : "phép trừ",any : "không có gì",do:"làm",while:"trong khi",loop:"lặp, lặp lại",
-            perform:"thực hiện",flatform : "hình phẳng",flat:"bằng phẳng",form : "biểu mẫu",
+            perform:"thực hiện",flatform : "hình phẳng",flat:"bằng phẳng",form : "biểu mẫu",items :'mặt hàng',
             template:"bản mẫu",temp:"nhân viên bán thời gian",tamed:"thuần hóa",Notification:"thông báo",
             server:"máy chủ",remote:"xa xôi",verify:"xác minh",token:"mã thông báo",application:"ứng dụng",
-            software:"phần mềm",tool:"dụng cụ",login:"đăng nhập",signin:"đăng nhập",
-            console:"bàn điều khiển",extension:"sự mở rộng",explore:"khám phá",export:"xuất khẩu",// 
-            Attachment:"tập tin đính kèm",signup:"đăng ký",element : "các yếu tố",encode:"mã hóa",
+            software:"phần mềm",tool:"dụng cụ",login:"đăng nhập",signin:"đăng nhập",development:'sự phát triển',
+            console:"bàn điều khiển",extension:"sự mở rộng",explore:"khám phá",export:"xuất khẩu",import:'nhập khẩu',
+            Attachment:"tập tin đính kèm",signup:"đăng ký",element : "các yếu tố",encode:"mã hóa",product:'sản phẩm',
             decode:"giải mã",boot:"khởi động",root:"nguồn gốc",document:"tài liệu",directory:"danh mục",
-            dictionary:"từ điển",dict :"mệnh lệnh",direct:"trực tiếp",engineer : "kỹ sư",
-            spam:"❌ stop! không được spam ❌",VN: "Việt nam vô địch, Việt Nam number one1 😂",
+            dictionary:"từ điển",dict :"mệnh lệnh",direct:"trực tiếp, thẳng thắn",engineer : "kỹ sư",develop:'phát triển',
+            spam:"❌ stop! không được spam ❌",VN: "Việt nam vô địch, Việt Nam number one1 😂",developer:'nhà phát triển',
             war : "❌ stop! không được phép nói tục ❌",russia: SearchBot[30],Einstein:SearchBot[31],
             newton:SearchBot[32],hacker:SearchBot[33],communism:`${received_message.text} : `+SearchBot[34],
             stackoverflow:SearchBot[35],language:"ngôn ngữ",received:"nhận",program:"chương trình",programming:"lập trình",
             foreign :"ngoại quốc",my :"của tôi",champion :'vô địch',lose  :"thua",win  :"thắng",height  :"chiều cao",width  :"chiều rộng",
-            main :"chính",origin :"gốc",value :"giá trị",default :"mặc định",navigator :"hao tiêu",
-            string :"chuỗi",integer :"số nguyên",decimal :"số thập phân",prime :"số nguyên tố",
-            print :'in',paint :"sơn",publish :"xuất bản",list :"danh sách",push :"đẩy",error :"lỗi",
-            warning :"cảnh báo",translate :"dịch",invite :"mời",cross :"đi qua",right :"phải",left :"trái",
-            intial :'bên trong',index :"mục lục",try :"thử",press :"nhấn",phising :"lừa đảo",
+            main :"chính",origin :"gốc",value :"giá trị",default :"mặc định",navigator :"hao tiêu",display:'giao diện',
+            string :"chuỗi",integer :"số nguyên",decimal :"số thập phân",prime :"số nguyên tố",invalid:'không hợp lệ',
+            print :'in',paint :"sơn",publish :"xuất bản",list :"danh sách",push :"đẩy",error :"lỗi",contact:'tiếp xúc',
+            warning :"cảnh báo",translate :"dịch",invite :"mời",cross :"đi qua",right :"phải",left :"trái",latitude:'vĩ độ',
+            intial :'bên trong',index :"mục lục",try :"thử",press :"nhấn",phising :"lừa đảo",longitude:'kinh độ',
             plugin :"cắm vào",upper :"viết hoa",lower :"viết thường",reserved :"kín đáo",property :"tài sản",//inter
             mason :"thợ nề",space :"khoảng cách, không gian",pain :"đau đớn",new :"mới",content :"nội dung",
-          MyObject: function(){
+            navigative:'điều hướng',visual:'trực quan',slogan:'khẩu hiệu',great:'tuyệt vời',direction:'hướng đi',
+            MyObject: function(){
               
           }
       }
@@ -508,6 +509,15 @@ let Uppertoxic = TOXIC.map(element => {
       case "successfully":
           response={"text":`${received_message.text} : `+a.info.successfully,}
           break;
+      case "contact":
+        response={"text":`${received_message.text} : `+a.info.contact,}
+        break;
+      case "latitude":
+          response={"text":`${received_message.text} : `+a.info.latitude,}
+          break;//
+      case "longitude":
+          response={"text":`${received_message.text} : `+a.info.longitude,}
+          break;
       case "success":
         response={"text":`${received_message.text} : `+a.info.success,}
         break;
@@ -523,6 +533,18 @@ let Uppertoxic = TOXIC.map(element => {
       case "fuck":
           response={"text":`${received_message.text} : `+a.info.fuck,}
           break;
+      case "navigative":
+        response={"text":`${received_message.text} : `+a.info.navigative,}
+        break;
+      case "slogan":
+        response={"text":`${received_message.text} : `+a.info.slogan,}
+        break;
+      case "visual":
+        response={"text":`${received_message.text} : `+a.info.visual,}
+        break;
+      case "great":
+        response={"text":`${received_message.text} : `+a.info.great,}
+        break;
       case "page":
           response={"text":`${received_message.text} : `+a.info.page,}
           break;
@@ -572,6 +594,12 @@ let Uppertoxic = TOXIC.map(element => {
       case "scene":
           response={"text":`${received_message.text} : `+a.info.scene,}
           break;
+      case "impossible":
+        response={"text":`${received_message.text} : `+a.info.impossible,}
+        break;
+      case "async":
+        response={"text":`${received_message.text} : `+a.info.async,}
+        break;
       case "screen":
           response={"text":`${received_message.text} : `+a.info.screen,}
           break;
@@ -656,6 +684,12 @@ let Uppertoxic = TOXIC.map(element => {
                   case "element":
                   response={"text":`${received_message.text} : `+a.info.element,}
                   break;
+                  case "product":
+                  response={"text":`${received_message.text} : `+a.info.product,}
+                  break;
+                  case "depend":
+                  response={"text":`${received_message.text} : `+a.info.depend,}
+                  break;
                   case "comfortable":
                   response={"text":`${received_message.text} : `+a.info.comfortable,}
                   break;
@@ -674,8 +708,20 @@ let Uppertoxic = TOXIC.map(element => {
                   case "do":
                   response={"text":`${received_message.text} : `+a.info.do,}
                   break;
+                  case "synchronized":
+                  response={"text":`${received_message.text} : `+a.info.synchronized,}
+                  break;
+                  case "horizontal":
+                  response={"text":`${received_message.text} : `+a.info.horizontal,}
+                  break;
+                  case "direction":
+                  response={"text":`${received_message.text} : `+a.info.direction,}
+                  break;
                   case "work":
                   response={"text":`${received_message.text} : `+a.info.work,}
+                  break;
+                  case "items":
+                  response={"text":`${received_message.text} : `+a.info.items,}
                   break;
                   case "water":
                   response={"text":`${received_message.text} : `+a.info.water,}
@@ -809,6 +855,12 @@ let Uppertoxic = TOXIC.map(element => {
                   case "tree":
                   response={"text":`${received_message.text} : `+a.info.tree,}
                   break;
+                  case "invalid":
+                  response={"text":`${received_message.text} : `+a.info.invalid,}
+                  break;
+                  case "display":
+                  response={"text":`${received_message.text} : `+a.info.display,}
+                  break;
                   case "garbage":
                   response={"text":`${received_message.text} : `+a.info.garbage,}
                   break;
@@ -844,6 +896,12 @@ let Uppertoxic = TOXIC.map(element => {
                   break;
                   case "disappointed":
                   response={"text":`${received_message.text} : `+a.info.disappointed,}
+                  break;
+                  case "import":
+                  response={"text":`${received_message.text} : `+a.info.import,}
+                  break;
+                  case "development":
+                  response={"text":`${received_message.text} : `+a.info.development,}
                   break;
                   case "service":
                   response={"text":`${received_message.text} : `+a.info.service,}
