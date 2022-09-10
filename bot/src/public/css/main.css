@@ -63,7 +63,7 @@
       font-size: 15px;
       width: 80px;
       left: 0px;
-      top: 400;
+      top: 400px;
       font-family: fantasy;
       color: white;
       background: #1f1f1f;
@@ -127,7 +127,7 @@
     border-radius: 10px;
     width: 45px;
     left: 36px;
-    top: 25px;
+    top: 22px;
     color: white;
     background-color: #1f1f1f;
     transition: all 1s ease;
@@ -191,12 +191,6 @@ h4{
 
 
 
-
-
-
-
-
-
 .contentinfo {
     position: absolute;
     z-index: 0;
@@ -232,7 +226,6 @@ h4{
 
 
 .contentskill {
-    
     position: absolute;
     z-index: 0;
     height: 100%;

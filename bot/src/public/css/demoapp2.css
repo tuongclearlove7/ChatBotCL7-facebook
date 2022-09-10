@@ -1,4 +1,4 @@
-/* #mybg {
+#mybg {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -6,7 +6,7 @@
     height: 100%;
     object-fit: cover;
     z-index: 0;
-} */
+}
 
 .but {
     width: 42px;
@@ -68,23 +68,25 @@
     100% { background-position: 0 0; }
 }
 .hello{
-    padding: 0px;
-    margin: auto;
-    left: 20px;
+    position: fixed;
+    z-index: 0;
+    height: 0;
+    top: 15%;
+    left: 40%;
     right: 0px;
     width: 21%;
-    position: fixed;
     font-size: 25px;
-    top: 6rem;
-    text-align: center;
+    
+    
 }
 .hello a {
     color: black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-shadow: -1px 0 white, 0 2px white, 2px 0 white, 0 -1px white;
+    cursor: no-drop;
     transition: all 0.5s ease;
     text-decoration: none;
     opacity: 0.9;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: -1px 0 white, 0 2px white, 2px 0 white, 0 -1px white;
 }
 .hello a:hover{
     color: rgb(233, 8, 125);
@@ -135,7 +137,7 @@ div.column1 {
     z-index: 1;
     display: table;
     cursor: pointer;
-    margin: 55px 0px 0px 0px;
+    margin: 35px 0px 0px -8px;
     width: 85px;
     height: 100%;
     color: #fff;
@@ -157,13 +159,13 @@ div.column1 {
 }
 .con {
     position: fixed;
-    z-index: 1;
-    bottom: 0rem;
-    width: 100%;
-    margin: 0px auto;
-    height: 20px;
     background-color: #373737;
     opacity: 0.9;
+    z-index: 1;
+    left: 0px;
+    bottom: 0rem;
+    width: 100%;
+    height: 20px;
 }
 .license{
     left: 0rem;

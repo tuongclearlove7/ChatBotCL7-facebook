@@ -42,46 +42,6 @@ html{
     opacity: 1;
 }
 
-div.Myheader a{
-    color: white;
-    font-size: 25px;
-    left: 0px;
-    text-decoration: none;
-}
-div.home{
-    margin: 0px;
-    padding: 0px;
-    position: fixed;
-    height: 0%;
-    top: 2px;
-    left: 7px;
-
-}
-.home a{
-    
-    text-decoration: none;
-    font-size: 25px;
-    margin: auto;
-    top: 15px;
-    color: black;
-    position: relative;
-    transition: all 0.5s ease;
-}
-div.Myheader div.home a:hover{
-    color:rgb(26, 241, 241);
-    font-size: 28px;
-}
-
-div.Myheader .myhome a{
-    position: fixed;
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-    left: 36px;
-    top: 22px;
-    z-index: 2;
-}
-
 div.icon a{
     position: fixed;
     z-index: 1;
