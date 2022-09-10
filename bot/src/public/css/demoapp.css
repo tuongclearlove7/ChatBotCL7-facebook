@@ -1,6 +1,7 @@
 html{
     background-size: 200%;
     text-align: center;
+    background: linear-gradient(to right, silver, white, silver	 100%);
 }
 *{
     padding: 0;
@@ -9,46 +10,52 @@ html{
     font-family: "Fredoka", serif;
 }
 
-.between{
+.Myheader{
     position: fixed;
-    background-color: #00BCD4;
-    width: 100px;
-    height: 50px;
+    z-index: 1;
+    background-color: #1f1f1f;
+    border: 2px solid black;
+    width: 85px;
+    height: 55px;
     margin: 0px 0px 0px 0px;
     transition: all 0.5s ease;
     cursor: pointer;
 }
-.between:hover{
+.Myheader:hover{
     opacity: 1;
     background-color: rgb(215 7 82);
     
 }
-.between2{
+.Myheader2{
     position: fixed;
-    background-color:rgb(21 21 21);
-    width: 100%;
-    height: 50px;
-    margin: 0px 0px 0px 100px;
+    z-index: 1;
     cursor: pointer;
+    width: 100%;
+    height: 55px;
+    margin: 0px 0px 0px 83px;
+    background: greenyellow;
+    border: 2px solid black;
+    
 }
-.between2:hover{
+.Myheader2:hover{
     transition: all 1s ease;
-    background-color: #454545;
+    opacity: 1;
 }
 
-div.between a{
+div.Myheader a{
     color: white;
     font-size: 25px;
+    left: 0px;
     text-decoration: none;
 }
 div.home{
-    
     margin: 0px;
     padding: 0px;
     position: fixed;
     height: 0%;
     top: 2px;
-    left: 13px;
+    left: 7px;
+
 }
 .home a{
     
@@ -56,92 +63,108 @@ div.home{
     font-size: 25px;
     margin: auto;
     top: 15px;
-    color: white;
+    color: black;
     position: relative;
     transition: all 0.5s ease;
 }
-div.between div.home a:hover{
+div.Myheader div.home a:hover{
     color:rgb(26, 241, 241);
     font-size: 28px;
 }
 
-div.between .my-home a{
+div.Myheader .myhome a{
     position: fixed;
     color: white;
     text-decoration: none;
     font-size: 15px;
-    left: 45px;
+    left: 36px;
     top: 22px;
     z-index: 2;
 }
 
 div.icon a{
-    margin: 20px 0px 0px -60px;
-    color: white;
+    position: fixed;
+    z-index: 1;
+    height: 0;
+    top: 22px;
+    left: -30%;
+    right: 0px;
+    color: black;
     font-size: 15px;
-    position:
-    fixed;
     transition: all 0.5s ease;
     text-decoration: none;
-    z-index: 1;
 }
 div.icon a:hover{
+    font-size: 18px;
     color: blueviolet;
 }
 
 div.icon2 a{
+    position: fixed;
     z-index: 1;
-    margin: 20px 0px 0px -28px;
-    color: white;
-    position:
-    fixed;
-    transition: all 0.5s ease;
+    height: 0;
+    top: 22px;
+    left: -15%;
+    right: 0px;
+    color: black;
     font-size: 15px;
+    transition: all 0.5s ease;
     text-decoration: none;
 }
 div.icon2 a:hover{
+    font-size: 18px;
     color: rgb(255, 0, 115);
+    
 }
 
 div.icon3 a{
+    position: fixed;
     z-index: 1;
-    margin: 20px 0px 0px 5px;
-    color: white;
-    position:
-    fixed;
-    transition: all 0.5s ease;
+    height: 0;
+    top: 22px;
+    left: 1%;
+    right: 0px;
+    color: black;
     font-size: 15px;
+    transition: all 0.5s ease;
     text-decoration: none;
 }
 div.icon3 a:hover{
+    font-size: 18px;
     color: blue;
 }
 
 div.icon4 a{
+    position: fixed;
     z-index: 1;
-    margin: 20px 0px 0px 35px;
-    color: white;
+    height: 0;
+    top: 22px;
+    left: 18%;
+    right: 0px;
+    color: black;
     font-size: 15px;
-    position:
-    fixed;
     transition: all 0.5s ease;
     text-decoration: none;
 }
 div.icon4 a:hover{
+    font-size: 18px;
     color: rgb(0, 149, 255);   
 }
 
 div.icon5 a{
+    position: fixed;
     z-index: 1;
-    margin: 20px 0px 0px 65px;
-    color: white;
-    position:
-    fixed;
-    transition: all 0.5s ease;
+    height: 0;
+    top: 22px;
+    left: 35%;
+    right: 0px;
+    color: black;
     font-size: 15px;
+    transition: all 0.5s ease;
     text-decoration: none;
 }
 div.icon5 a:hover{
+    font-size: 18px;
     color: silver;   
 }
 
@@ -154,19 +177,19 @@ div.icon5 a:hover{
     width: 10%;
     
 }
-#my-time{
+#mytime{
     position: fixed;
     top: 22px;
     right: 7px;
-    color: #34e9ee;
+    color: black;
     font-family: ui-monospace;
     display: flex;
     font-size: 10px;
     transition: all 0.5s ease;
     z-index: 1;
 }
-#my-time:hover{
-    color: white;
+#mytime:hover{
+    color: blue;
 }
 hr.le{
     z-index: 1;

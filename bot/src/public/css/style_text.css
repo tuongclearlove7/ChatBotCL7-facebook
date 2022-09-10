@@ -1,0 +1,15 @@
+.Mycontext{
+    position: absolute;
+    overflow: scroll;
+    z-index: 0;
+    height: 200%;
+    width: 50%;
+    top: 220px;
+    left: 25.5%;
+    right: 0px;
+}
+.context{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+
+}

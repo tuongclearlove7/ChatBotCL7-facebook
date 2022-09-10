@@ -1,21 +1,13 @@
-#my-bg {
+/* #mybg {
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
-}
-#my-bg2 {
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
+    z-index: 0;
+} */
+
 .but {
     width: 42px;
     position: fixed;
@@ -92,10 +84,12 @@
     text-shadow: -1px 0 white, 0 2px white, 2px 0 white, 0 -1px white;
     transition: all 0.5s ease;
     text-decoration: none;
+    opacity: 0.9;
 }
 .hello a:hover{
     color: rgb(233, 8, 125);
     text-decoration: none;
+    opacity: 10;
 }
 
 a h4{
@@ -127,114 +121,49 @@ div.text a:hover{
 }
 
 .frame{
+    position: relative;
     z-index: 1;
+    margin: 0px;
     top: 150px;
-   
     left: 1px;
     width: 300px;
     height: 300px;
-    margin: 0px;
-    position: relative;
     box-shadow: 0 0 0 10px rgb(255 255 255 / 50%);
 }
 div.column1 {
-    display: table;
-    width: 100px;
     position: fixed;
-    background-color: #1f1f1f;
-    opacity: 0.9;
+    z-index: 1;
+    display: table;
+    cursor: pointer;
+    margin: 55px 0px 0px 0px;
+    width: 85px;
     height: 100%;
     color: #fff;
-    margin: 55px 0px 0px 0px;
-    cursor: pointer;
+    background-color: #1f1f1f;
+    opacity: 0.9;
+    
 }
-
-#about {
-    z-index: 0;
+#mylogo{
     position: fixed;
-    text-decoration: none;
-    font-size: 25px;
-    left: 0px;
+    width: 50px;
+    top: 110px;
+    left: 15px;
+    transition: all 0.5s ease;
+    opacity: 0.7;
+}
+#mylogo:hover{
+    opacity: 10;
     top: 100px;
-    width: 100px;
-    font-family: fantasy;
-    color: white;
-    transition: all 1s ease;
-}
-#about:hover{
-    background-color: whitesmoke;
-    color: #000;
-    border: 3px solid white;
-    opacity: 1;
-
-}
-
-#info {
-    z-index: 0;
-    position: fixed;
-    text-decoration: none;
-    font-size: 25px;
-    width: 100px;
-    font-family: fantasy;
-    left: 0px;
-    top: 200px;
-    color: white;
-    transition: all 1s ease;
-}
-#info:hover{
-    background-color: whitesmoke;
-    color: #000;
-    border: 3px solid white;
-    opacity: 1;
-
-}
-#skill {
-    z-index: 0;
-    position: fixed;
-    text-decoration: none;
-    font-size: 25px;
-    width: 100px;
-    left: 0px;
-    top: 300;
-    font-family: fantasy;
-    color: white;
-    transition: all 1s ease;
-}
-#skill:hover{
-    background-color: whitesmoke;
-    color: #000;
-    border: 3px solid white;
-    opacity: 1;
-
-}
-#my {
-    z-index: 0;
-    position: fixed;
-    text-decoration: none;
-    font-size: 20px;
-    width: 100px;
-    font-family: fantasy;
-    left: 0px;
-    top: 400;
-    color: white;
-    transition: all 1s ease;
-}
-#my:hover{
-    background-color: whitesmoke;
-    color: #000;
-    border: 3px solid white;
-    opacity: 1;
-
 }
 .con {
     position: fixed;
+    z-index: 1;
     bottom: 0rem;
     width: 100%;
     margin: 0px auto;
     height: 20px;
-    background-color: white;
-    z-index: 0;
-
+    background-color: #373737;
+    opacity: 0.9;
 }
 .license{
     left: 0rem;
@@ -242,17 +171,22 @@ div.column1 {
     width: 100%;
     object-fit: cover;
     text-decoration: none;
-    color: rgb(73, 73, 73);
+    color: aqua;
     display: flex;
     font-size: 11px;
     position: fixed;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
 }
 .license:hover{
-    color: rgb(255, 0, 76);
+    color: white;
     text-decoration: none;
 }
+
+
+
+
+
+
 
 
 
