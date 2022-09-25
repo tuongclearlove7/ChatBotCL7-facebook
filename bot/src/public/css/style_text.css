@@ -1,6 +1,7 @@
 .Mycontext{
     position: absolute;
     overflow: scroll;
+    color: aliceblue;
     z-index: 0;
     height: 200%;
     width: 50%;

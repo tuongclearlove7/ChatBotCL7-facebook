@@ -1,97 +1,94 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/test2.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-      
-   <nav class="navbar navbar-expand-sm navbar-dark mb-4" style="background-color: black">
-       <a class="navbar-brand" href="http://fedu.vn">Fedu</a>
-       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-           aria-expanded="false" aria-label="Toggle navigation"></button>
-       <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
-           <ul class="navbar-nav  mt-2 mt-lg-0 ">
-               <li class="nav-item active">
-                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" href="#">xem danh sach node</a>
-               </li>
-               
-           </ul>
-           
-       </div>
-   </nav>
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
 
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
 
-<div class="container">
-    <div class="row">
-        <div class="col">
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
 
-            <div id="noteList" role="tablist" aria-multiselectable="true">
-                <div class="card">
-                    <div class="card-header" role="tab" id="note1">
-                        <h5 class="mb-0">
-                            <a data-toggle="collapse" data-parent="#noteList" href="#noteContent1" aria-expanded="true" aria-controls="noteContent1">
-                      ghi chu 2022
-                    </a>
-                        </h5>
-                    </div>
-                    <div id="noteContent1" class="collapse in" role="tabpanel" aria-labelledby="note1">
-                        <div class="card-body">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis sapiente, nisi, fuga eius voluptate, necessitatibus facilis inventore perspiciatis maiores hic quibusdam ipsa commodi debitis! Provident voluptatum velit temporibus quam autem.
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" role="tab" id="note2">
-                        <h5 class="mb-0">
-                            <a data-toggle="collapse" data-parent="#noteList" href="#noteContent2" aria-expanded="true" aria-controls="noteContent1">
-                      ghi chu 2022
-                    </a>
-                        </h5>
-                    </div>
-                    <div id="noteContent2" class="collapse in" role="tabpanel" aria-labelledby="note2">
-                        <div class="card-body">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis sapiente, nisi, fuga eius voluptate, necessitatibus facilis inventore perspiciatis maiores hic quibusdam ipsa commodi debitis! Provident voluptatum velit temporibus quam autem.
-                        </div>
-                    </div>
-                </div>   
-            </div>
-        </div>
-       
-        
-    <div class="col-4">
-        <h3>Note editor</h3>
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
 
-        <div class="form-group">
-          <label for="note-title">tieu de note</label>
-          <input type="text" class="form-control" name="note-title" id="note-title" aria-describedby="helpIdNoteTitle" placeholder="tieu de note">
-          <small id="helpIdNoteTitle" class="form-text text-muted">dien tieu de</small>
-        </div>
-        </div>
-    </div>
-    
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
 
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
 
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+@media screen and (max-height: 450px) {
+  .overlay a 
+{
+    font-size: 20px
   
+}
+  
+}
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
 
 
+      <img id="mylogo" src="./image/cl7-nobg.png" alt="">
+    <div id="myBtnContainer">
+      <button class="btn1" onclick="filterSelection('about')"> About</button>
+      <button class="btn2" onclick="filterSelection('info')"> Info</button>
+      <button class="btn3" onclick="filterSelection('skill')">Skill</button>
+      <button class="btn4" onclick="filterSelection('myproj')">My project</button>
+      <button class="btn5" onclick="filterSelection('blockcontext')"> Vocabulary</button>
+    </div>
+
+
+
+  </div>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+
+</script>
+     
 </body>
 </html>
-
 
 
 

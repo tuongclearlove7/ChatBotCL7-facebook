@@ -1,0 +1,138 @@
+#mylogo{
+    position: absolute;
+    width: 50px;
+    top: 110px;
+    left: 15px;
+    transition: all 0.5s ease;
+    opacity: 0.7;
+}
+#mylogo:hover{
+    opacity: 10;
+    
+}
+
+
+.btn1 {
+    z-index: 2;
+    position: absolute;
+    text-decoration: none;
+    font-size: 15px;
+    left: 0px;
+    top: 200px;
+    width: 80px;
+    font-family: fantasy;
+    color: white;
+    background-color: #1f1f1f;
+    transition: all 1s ease;
+}
+
+.btn1:hover {
+    background-color: whitesmoke;
+    color: black;
+    border: 3px solid white;
+    opacity: 1;
+}
+
+.btn2 {
+    z-index: 2;
+    position: absolute;
+    text-decoration: none;
+    font-size: 15px;
+    width: 80px;
+    font-family: fantasy;
+    left: 0px;
+    top: 300px;
+    color: white;
+    background-color: #1f1f1f;
+    transition: all 1s ease;
+}
+
+.btn2:hover {
+    background-color: whitesmoke;
+    color: #000;
+    border: 3px solid white;
+    opacity: 1;
+}
+.btn3 {
+    z-index: 2;
+    position: absolute;
+    text-decoration: none;
+    font-size: 15px;
+    width: 80px;
+    left: 0px;
+    top: 400px;
+    font-family: fantasy;
+    color: white;
+    background: #1f1f1f;
+    transition: all 1s ease;
+}
+
+.btn3:hover {
+    background-color: whitesmoke;
+    color: #000;
+    border: 3px solid white;
+    opacity: 1;
+}
+.btn4 {
+    z-index: 2;
+    position: absolute;
+    text-decoration: none;
+    font-size: 15px;
+    width: 80px;
+    font-family: fantasy;
+    left: 0px;
+    top: 500px;
+    color: white;
+    background-color: #1f1f1f;
+    transition: all 1s ease;
+}
+
+.btn4:hover {
+    background-color: whitesmoke;
+    color: #000;
+    border: 3px solid white;
+    opacity: 1;
+}
+
+.btn5 {
+  z-index: 2;
+  position: absolute;
+  font-family: fantasy;
+  text-decoration: none;
+  font-size: 15px;
+  width: 80px;
+  left: 0px;
+  top: 600px;
+  color: white;
+  background-color: #1f1f1f;
+  transition: all 1s ease;
+}
+
+.btn5:hover {
+  background-color: whitesmoke;
+  color: #000;
+  border: 3px solid white;
+  opacity: 1;
+}
+
+.btnback {
+  z-index: 2;
+  position: absolute;
+  font-family: fantasy;
+  text-decoration: none;
+  font-size: 10px;
+  border-radius: 10px;
+  width: 45px;
+  left: 36px;
+  top: 22px;
+  color: white;
+  background-color: #1f1f1f;
+  transition: all 1s ease;
+}
+
+.btnback:hover {
+  background-color: whitesmoke;
+  color: #000;
+  border: 3px solid white;
+  opacity: 1;
+}

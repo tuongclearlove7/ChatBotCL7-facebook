@@ -157,14 +157,14 @@
     right: 0px;
 }
 .textabout{
-    position: relative;
     font-family: monospace;
-    color: black;
-    white-space: nowrap;
-    text-align: center;
+    position: relative;
+    color: white;
+    width: 5%;
+    margin: auto;
+    right: 120px;
     font-size: 20px;
-    bottom: 40px;
-    right: 110px;
+    bottom: 30px;
 }  
 .textabout:hover{
     color: #234e9c;
@@ -172,7 +172,7 @@
 .aboutimage{
     width: 300px;
     height: 280px;
-    border: 5px solid #2ab6d4;
+    box-shadow: 0 0 0 10px rgb(255 255 255 / 50%);
     border-radius: 25px 0px;
 }
 h4{
@@ -202,10 +202,12 @@ h4{
 .textinfo{
     font-family: monospace;
     position: relative;
-    color: black;
+    color: white;
+    width: 5%;
+    margin: auto;
+    right: 120px;
     font-size: 20px;
     bottom: 30px;
-    left: -110px;
 }  
 .textinfo:hover{
     color: #1b4955;
@@ -219,7 +221,7 @@ h4{
     position: relative;
     cursor: no-drop;
     width: 300px;
-    border: 5px solid #18b8bc;
+    box-shadow: 0 0 0 10px rgb(255 255 255 / 50%);
     border-radius: 25px 0px;
 }
 
@@ -236,19 +238,19 @@ h4{
 .textskill{
     font-family: monospace;
     position: relative;
+    color: white;
+    width: 5%;
+    margin: auto;
+    right: 120px;
     font-size: 20px;
-    color: black;
-    cursor: pointer;
-    z-index: 0;
-    bottom: 20px;
-    left: -115px;
+    bottom: 30px;
 }  
 .textskill:hover{
     color: #202020;
 }
 .skillimage{
     width: 300px;
-    border: 5px solid powderblue;border-radius:25px 25px ;
+    box-shadow: 0 0 0 5px rgb(255 255 255 / 50%);
 }
 
 
@@ -268,7 +270,9 @@ h4{
     left: 0px;
 }
 
-
+.myproj_image{
+    box-shadow: 0 0 0 5px rgb(255 255 255 / 50%);
+}
 
 
 

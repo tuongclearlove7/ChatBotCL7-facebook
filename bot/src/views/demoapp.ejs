@@ -4,27 +4,35 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Profile of Clearlove7</title>
-    <link rel="icon" href="image/facebook-dark.png" type="image/gif/jpg/png" sizes="50x50">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/demoapp.css">
-    <link rel="stylesheet" href="css/style_mobile.css">
-    <link rel="stylesheet" href="css/demoapp2.css">
-    <link rel="stylesheet" href="css/style_text.css">
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
- <!-- <script type="module" src="javascript/hide_en.js"></script> -->
+      <link rel="icon" href="image/facebook-dark.png" type="image/gif/jpg/png" sizes="50x50">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/demoapp.css">
+      <link rel="stylesheet" href="css/style_mobile.css">
+      <link rel="stylesheet" href="css/demoapp2.css">
+      <link rel="stylesheet" href="css/style_text.css">
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="./javascript/change-img.js"></script>
+      <script src="./javascript/column.js"></script>
+      <script src="./javascript/column-butt.js"></script>
+      <script src="https://www.w3schools.com/lib/w3.js"></script>
+      <script src="./javascript/clock.js"></script>
+      <!-- <script type="module" src="javascript/hide_en.js"></script> -->
   </head>
-  <body>
+  <body class="preloading">      
+    <img name="slide" alt="" id="mybg">
     <div class="Myheader">
         <div class="mobileContainer">
           <button class="btnback" onclick="filterSelection('back')">Back</button>
         <div class="Mymenu">
           <div id="myLinks">
             <div class="column1">
-              <img id="mylogo" src="./image/cl7-nobg.png" alt="">
+              <a href="https://chatbotclearlove7.herokuapp.com/?fbclid=IwAR0ZJ4JkVET4QK7Ql9hBejTmvPpovvYec0gYLoAH4SRojU4RQWD0HzQj5hk">
+                <img id="mylogo" src="./image/cl7-nobg.png" alt=""></a>
             </div>
             <div id="myBtnContainer">
               <button class="btn1" onclick="filterSelection('about')"> About</button>
@@ -41,8 +49,6 @@
         </div>
         </div>
       </div>
-  
-  
       <div class="Myheader2">
       </div>
       <div class="icon"><a class="fa fa-github" href="https://github.com/tuongclearlove7"></a></div>   
@@ -50,28 +56,21 @@
       <div class="icon3"> <a class="fa fa-facebook-square"href="https://www.facebook.com/Ytttuong1/" ></a></div> 
       <div class="icon4"> <a class="fa fa-twitter" href="https://twitter.com/?lang=vi"></a></div>  
       <div class="icon5"><a class="fa fa-apple" href="https://www.apple.com/"></a></div>
-  
-      
       <div class="Timeline">
-        <p id="mytime"></p>
-        <script>
-        let date = new Date();
+      <p id="mytime">{{hour}} {{minutes}} {{seconds}}</p>
+      <script> let date = new Date();
         let hours = date.getHours();
         let minutes = date.getMinutes();
         let seconds = date.getSeconds();
-        let present = `Time : ${hours}:${minutes}:${seconds}`;
-        console.table(present);
-        document.getElementById("mytime").innerHTML = present;
-  </script>
-  
-  </div>
-  <div class="hello">
-  <a href="">Hello I'm Clearlove7★ :D</a>
-  </div>
-    
-  
-  
-  <div class="main">
+        let present = {'hour' : 'Time : '+hours, 'minutes' : ': '+minutes, 'seconds':': '+seconds};;
+        console.table(present);    
+        w3.displayObject("mytime", present);
+        </script>
+      </div>
+    <div class="hello">
+    <a href="">Hello I'm Clearlove7★ :D</a>
+    </div>
+ <div class="main">
     <div class="COUMNN about">
       <div class="contentabout">
     
@@ -99,7 +98,9 @@
     
     <div class="COUMNN myproj">
       <div class="contentmyproj">
-          <a id="toome" href="https://github.com/tuongclearlove7/App">https://github.com/tuongclearlove7/App</a>
+          <a id="toome" href="https://github.com/tuongclearlove7/App">
+            <img class="myproj_image" src="./image/project-app.png" style="width: 320px;height: 110px;" alt="">
+          </a>
       </div>
     </div>
     
@@ -158,67 +159,7 @@
          </span>
          </div>
       </div>
-  
   </div>
-  
-  
-  
-  <script>
-     
-    function filterSelection(c) {
-      var x, i;
-      x = document.getElementsByClassName("COUMNN");
-      if (c == "all") c = "";
-      for (i = 0; i < x.length; i++) {
-        RemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
-      }
-    }
-    
-    function AddClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-      }
-    }
-    
-    function RemoveClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-          arr1.splice(arr1.indexOf(arr2[i]), 1);     
-        }
-      }
-      element.className = arr1.join(" ");
-    }
-    
-    
-    // Add active class to the current button (highlight it)
-    var btnContainer = document.getElementById("myBtnContainer");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function(){
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-      });
-    }
-    </script>
-  <script>
-  function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
-  </script>
-  
   </body>
   
   <div class="con">
