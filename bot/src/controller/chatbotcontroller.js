@@ -21,7 +21,7 @@ let getHomePage = async (req,res)=>{
   //   catch(e){
   //      console.table(e);
   //    }
-    return res.render('demoapp.ejs') 
+    res.render('demoapp.ejs') 
 }
 
 let postWebhook= (req,res)=>{
@@ -48,18 +48,17 @@ let postWebhook= (req,res)=>{
     } else if (webhook_event.postback) {
 
       handlePostback(sender_psid, webhook_event.postback);
-    }
-    ;
+    };
 });
 
     res.status(200).send('EVENT_RECEIVED');
 
-  }else{
-    res.sendStatus(404);
-  }
+    }else{
+      res.sendStatus(404);
+    }
 };
 
-let getWebhook= (req,res)=>{
+let getWebhook = (req,res)=>{
 
     console.log('verify token : ',VERIFY_TOKEN)
 
@@ -1288,7 +1287,8 @@ function handlePostback(sender_psid, received_postback) {
 
     if (payload === 'yes') {
       response = { "text": "Cảm ơn!" }
-    } else if (payload === 'no') {
+    } 
+    else if (payload === 'no') {
       response = { "text": "ohhh, cảm ơn vì bạn đã nhận xét <: " }
     }
     

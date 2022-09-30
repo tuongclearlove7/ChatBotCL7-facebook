@@ -20,8 +20,9 @@
       <script src="./javascript/column.js"></script>
       <script src="./javascript/column-butt.js"></script>
       <script src="https://www.w3schools.com/lib/w3.js"></script>
+      <script src="./javascript/select_element.js"></script>
       <script src="./javascript/clock.js"></script>
-      <!-- <script type="module" src="javascript/hide_en.js"></script> -->
+      <script src="./javascript/place.js"></script>
   </head>
   <body class="preloading">      
     <img name="slide" alt="" id="mybg">
@@ -57,14 +58,15 @@
       <div class="icon4"> <a class="fa fa-twitter" href="https://twitter.com/?lang=vi"></a></div>  
       <div class="icon5"><a class="fa fa-apple" href="https://www.apple.com/"></a></div>
       <div class="Timeline">
-      <p id="mytime">{{hour}} {{minutes}} {{seconds}}</p>
-      <script> let date = new Date();
+      <p id="mytime"></p>
+      <script>  
+        let date = new Date();
         let hours = date.getHours();
         let minutes = date.getMinutes();
         let seconds = date.getSeconds();
-        let present = {'hour' : 'Time : '+hours, 'minutes' : ': '+minutes, 'seconds':': '+seconds};;
-        console.table(present);    
-        w3.displayObject("mytime", present);
+        let present = 'Time : ' + hours + ':'+ minutes + ':'+seconds;
+        console.table(present); 
+        document.getElementById('mytime').innerHTML = present;
         </script>
       </div>
     <div class="hello">
@@ -159,7 +161,7 @@
          </span>
          </div>
       </div>
-  </div>
+    </div>
   </body>
   
   <div class="con">

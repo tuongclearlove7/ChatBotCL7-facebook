@@ -17,7 +17,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 initWrbrouter(app);
 // connect_db();
 
-let port = process.env.PORT || 3000;
+
+let port = process.env.PORT || 8080;
 
 app.listen(port, () => {
     console.log("App profile is running on port : ", port);
