@@ -79,7 +79,7 @@
     
     
 }
-.hello a {
+.hello p {
     color: black;
     cursor: no-drop;
     transition: all 0.5s ease;
@@ -88,7 +88,7 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-shadow: -1px 0 white, 0 2px white, 2px 0 white, 0 -1px white;
 }
-.hello a:hover{
+.hello p:hover{
     color: rgb(233, 8, 125);
     text-decoration: none;
     opacity: 10;

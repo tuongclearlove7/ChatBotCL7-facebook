@@ -154,9 +154,3 @@ div.icon5 a:hover{
 #mytime:hover{
     color: blue;
 }
-hr.le{
-    z-index: 1;
-    top: 50px;
-    width: 100%;
-    position: fixed;
-}
