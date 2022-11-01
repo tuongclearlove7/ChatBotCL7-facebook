@@ -1,0 +1,236 @@
+@import "./style_mobile.css";
+@import "./link.css";
+.mobilemenu{
+    display: none;
+    color: aliceblue;
+    font-size: 40px;
+}
+.hello h4{
+    display: none;
+}
+.hello h3{
+    display: none;
+}
+li.dropdown{
+    display: block;
+}
+.NAV {
+    display: none;
+}
+div .column2{
+  display: block;
+}
+.nonecl{
+  display: none;
+}
+.dropdown2 {
+    position: fixed;
+    display: inline-block;
+    background: rgb(238, 72, 11); 
+    transition: all 0.7s ease;
+    z-index: 5;
+    width: 90px;
+    height: 54px;
+    font-size: 20px;
+    top: 0px;
+    left: 148px;
+
+  }
+  .dropdown3{
+    position: fixed;
+    display: inline-block;
+    background: rgb(238, 72, 11); 
+    transition: all 0.7s ease;
+    z-index: 5;
+    width: 90px;
+    height: 54px;
+    font-size: 20px;
+    top: 0px;
+    left: 300px;
+  }
+  .dropdown4{
+    position: fixed;
+    display: inline-block;
+    background: rgb(238, 72, 11); 
+    transition: all 0.7s ease;
+    z-index: 5;
+    width: 90px;
+    height: 54px;
+    font-size: 20px;
+    top: 0px;
+    left: 450px;
+  }
+  .dropdown_icon{
+    position: fixed;
+    display: inline-block;
+    background: #1f1f1f;
+    transition: all 0.7s ease;
+    border: 2px solid black;
+    z-index: 5;
+    width: 86px;
+    height: 55px;
+    font-size: 20px;
+    top: 0px;
+    right: 0px;
+  }
+  .dropdown_icon:hover{
+    background-color: rgb(215 7 82);
+  }
+
+  .dropdown2:hover,.dropdown3:hover,.dropdown4:hover{
+    background-color: rgb(58, 58, 58);
+  }
+  .NAV2 {
+    position: fixed;
+    color: white;
+    display: block;
+    text-decoration: none;
+    transition: all 0.7s ease;
+    font-size: 15px;
+    top: 21px;
+    left: 152px;
+  }
+  .NAV3{
+    position: fixed;
+    color: white;
+    display: block;
+    text-decoration: none;
+    transition: all 0.7s ease;
+    font-size: 15px;
+    top: 21px;
+    left: 305px;
+  }
+  .NAV4{
+    position: fixed;
+    color: white;
+    display: block;
+    text-decoration: none;
+    transition: all 0.7s ease;
+    font-size: 15px;
+    top: 21px;
+    left: 467px;
+  }
+  .NAV_icon{
+    position: fixed;
+    color: white;
+    display: block;
+    text-decoration: none;
+    transition: all 0.7s ease;
+    font-size: 10px;
+    top: 25px;
+    right: 13px;
+  }
+  
+  .NAV2:hover,.NAV3:hover,.NAV4:hover,.NAV_icon:hover{
+      color: aqua;
+  }
+  .dropdown_content2 {
+    transition: all 0.7s ease;
+    display: none;
+    position: fixed;
+    top: 54px;
+    left: 150px;
+    font-size: 20px;
+    z-index: 0;
+  }
+  .dropdown_content3 {
+    transition: all 0.7s ease;
+    display: none;
+    position: fixed;
+    top: 54px;
+    left: 190px;
+    font-size: 20px;
+    z-index: 0;
+  }
+  .dropdown_content4 {
+    transition: all 0.7s ease;
+    display: none;
+    position: fixed;
+    top: 54px;
+    left: 231px;
+    font-size: 20px;
+    z-index: 0;
+  }
+  .dropdown_content_icon {
+    transition: all 0.7s ease;
+    display: none;
+    position: fixed;
+    top: 54px;
+    left: 248px;
+    font-size: 20px;
+    z-index: 0;
+  }
+  
+  .dropdown2:hover .dropdown_content2,.dropdown3:hover .dropdown_content3, 
+  .dropdown4:hover .dropdown_content4{
+    display: block;
+  }
+  .dropdown_icon:hover .dropdown_content_icon{
+    display: none;
+  }
+  .my_nav2{
+    position: fixed;
+    font-family: Inter,sans-serif;
+    position: fixed;
+    z-index: 1;
+    display: table;
+    cursor: pointer;
+    color: #fff;
+    background-color: #1f1f1f;
+    transition: all 0.8s ease;
+    width: 89px;
+    height: 360px;
+    left: 148.5px;
+    top: 54px;
+  }
+  .my_nav3{
+    position: fixed;
+    font-family: Inter,sans-serif;
+    position: fixed;
+    z-index: 1;
+    display: table;
+    cursor: pointer;
+    color: #fff;
+    background-color: #1f1f1f;
+    transition: all 0.8s ease;
+    width: 89px;
+    height: 360px;
+    left: 300.5px;
+    top: 54px;
+  }
+  .my_nav4{
+    position: fixed;
+    font-family: Inter,sans-serif;
+    position: fixed;
+    z-index: 1;
+    display: table;
+    cursor: pointer;
+    color: #fff;
+    background-color: #1f1f1f;
+    transition: all 0.8s ease;
+    width: 89px;
+    height: 360px;
+    left: 450px;
+    top: 54px;
+  }
+  .my_nav_icon{
+    position: fixed;
+    font-family: Inter,sans-serif;
+    position: fixed;
+    z-index: 1;
+    display: table;
+    cursor: pointer;
+    color: #fff;
+    background-color: #1f1f1f;
+    opacity: 0.9;
+    transition: all 0.8s ease;
+    width: 100%;
+    height: 150px;
+    right: 0px;
+    top: 54px;
+  }
+ 
+ 
+
+
+

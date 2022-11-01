@@ -1,0 +1,26 @@
+
+.contentskill {
+    position: absolute;
+    z-index: -10;
+    height: 100%;
+    top: 33%;
+    left: 0%;
+    right: 0px;
+}
+.textskill{
+    font-family: Inter,sans-serif;
+    position: relative;
+    color: white;
+    width: 5%;
+    margin: auto;
+    right: 320px;
+    font-size: 20px;
+    bottom: 30px;
+}  
+.textskill:hover{
+    color: #202020;
+}
+.skillimage{
+    width: 700px;
+    box-shadow: 0 0 0 5px rgb(255 255 255 / 50%);
+}

@@ -1,0 +1,39 @@
+.contentabout {
+    position: absolute;
+    z-index: -10;
+    height: 100%;
+    top: 30%;
+    left: 0%;
+    right: 0px;
+}
+.textabout{
+    font-family: Inter,sans-serif;
+    position: relative;
+    color: white;
+    width: 5%;
+    margin: auto;
+    right: 120px;
+    font-size: 20px;
+    bottom: 30px;
+}  
+.textabout:hover{
+    color: #234e9c;
+}
+.aboutimage{
+    width: 300px;
+    height: 280px;
+    box-shadow: 0 0 40px 0 rgb(0 0 0 / 16%);
+    border-radius: 3px;
+}
+h4{
+    
+    position: relative;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+    bottom: 20px;
+    font-size: 12px;
+    right: 70px;
+   
+}

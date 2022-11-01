@@ -1,3 +1,4 @@
+
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -6,75 +7,135 @@
       <title>Profile of Clearlove7</title>
       <link rel="icon" href="image/facebook-dark.png" type="image/gif/jpg/png" sizes="50x50">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/info/info.css">
+      <link rel="stylesheet" href="css/about/about.css">
+      <link rel="stylesheet" href="css/skill/skill.css">
+      <link rel="stylesheet" href="css/proj/proj.css">
       <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="css/demoapp.css">
-      <link rel="stylesheet" href="css/style_mobile.css">
       <link rel="stylesheet" href="css/demoapp2.css">
       <link rel="stylesheet" href="css/style_text.css">
+      <link rel="stylesheet" href="css//mobile_style.css">
+      <link rel="stylesheet" href="css//mobile_style2.css">
+      <link rel="stylesheet" href="css//mobile_style3.css">
       <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="./javascript/change-img.js"></script>
-      <script src="./javascript/column.js"></script>
-      <script src="./javascript/column-butt.js"></script>
+      <!-- <script src="./javascript/column.js"></script> -->
+      <script src="./javascript/mobile_column.js"></script>
       <script src="https://www.w3schools.com/lib/w3.js"></script>
-      <script src="./javascript/select_element.js"></script>
       <script src="./javascript/clock.js"></script>
       <script src="./javascript/place.js"></script>
       <script src="./javascript/api.js"></script>
+      <script src="./javascript/select_element.js"></script>
+      <script src="./javascript/change-img.js"></script>
   </head>
   <body class="preloading">      
     <img name="slide" alt="" id="mybg">
-    <div class="Myheader">
+      <div class="Left_Header"> </div>
+         <!-- <div class="Right_Header"> </div> -->
         <div class="mobileContainer">
-          <button class="btnback" onclick="filterSelection('back');">Back</button>
-        <div class="Mymenu">
-          <div id="myLinks">
-            <div class="column1">
-              <a href="https://chatbotclearlove7.herokuapp.com/?fbclid=IwAR0ZJ4JkVET4QK7Ql9hBejTmvPpovvYec0gYLoAH4SRojU4RQWD0HzQj5hk">
-                <img id="mylogo" src="./image/cl7-nobg.png" alt=""></a>
-            </div>
-            <div id="myBtnContainer">
-              <button class="btn1" onclick="filterSelection('about')"> About</button>
-              <button class="btn2" onclick="filterSelection('info')"> Info</button>
-              <button class="btn3" onclick="filterSelection('skill')">Skill</button>
-              <button class="btn4" onclick="filterSelection('myproj')">My project</button>
-              <button class="btn5" onclick="filterSelection('blockcontext')"> Vocabulary</button>
-            </div>
-          </div>
-          <a href="javascript:void(0);" class="myhome" onclick="myFunction()">
+          <a href="javascript:void(0);" class="myhome" onclick="ClickFunction('myclicks');">
             <i class="fa fa-home"></i>
           </a>
-        </div>
-        </div>
-        </div>
+          <a href="javascript:void(0);" class="mobilemenu" onclick="ShineFunction('myclicks');filterSelection('back');blockFunction('hi');blockFunction('myclicks');">
+          <i class="fa fa-caret-down"></i>
+          </a>
+          <button class="btnback" onclick="filterSelection('back');blockFunction('hi');ShineFunction('myclicks');">Menu</button>
+      <div class="Myheader2"> </div>
+
+
+     <li class="dropdown2">
+        <a href="javascript:void(0);" class="NAV2">
+          Knowledge
+          <i class="fa fa-caret-down"></i>
+        </a>
+      <div class="dropdown_content2">
+        <p class="my_nav2">
+          <a href="#link1" id="link1">link</a>
+          <a href="#link2" id="link2">link</a>
+          <a href="#link3" id="link3">link</a>
+          <a href="#link4" id="link4">link</a>
+        </p>
       </div>
-      <div class="Myheader2">
-      </div>
-      <div class="icon"><a class="fa fa-github" href="https://github.com/tuongclearlove7"></a></div>   
-      <div class="icon2"><a class="fa fa-instagram" href="https://www.instagram.com/"></a></div>  
-      <div class="icon3"> <a class="fa fa-facebook-square"href="https://www.facebook.com/Ytttuong1/" ></a></div> 
-      <div class="icon4"> <a class="fa fa-twitter" href="https://twitter.com/?lang=vi"></a></div>  
-      <div class="icon5"><a class="fa fa-apple" href="https://www.apple.com/"></a></div>
-      <div class="Timeline">
-      <p id="mytime"></p>
-      <script>  
-        let date = new Date();
-        let hours = date.getHours();
-        let minutes = date.getMinutes();
-        let seconds = date.getSeconds();
-        let present = 'Time : ' + hours + ':'+ minutes + ':'+seconds;
-        console.table(present); 
-        document.getElementById('mytime').innerHTML = present;
-        </script>
-      </div>
-    <div class="hello">
-    <p href="">Hello I'm Clearlove7★ :D</p>
+    </li>
+
+
+    <li class="dropdown3">
+      <a href="javascript:void(0);" class="NAV3" >
+        Algorithms
+        <i class="fa fa-caret-down"></i>
+       </a>
+    <div class="dropdown_content3">
+      <p class="my_nav3">
+        <a href="" id="link5">link</a>
+        <a href="" id="link6">link</a>
+        <a href="" id="link7">link</a>
+        <a href="" id="link8">link</a>
+      </p>
     </div>
- <div class="main">
-    <div class="COUMNN about">
+  </li>
+
+  <li class="dropdown4">
+    <a href="javascript:void(0);" class="NAV4" >
+        Contact
+        <i class="fa fa-caret-down"></i>
+     </a>
+    <div class="dropdown_content4">
+      <p class="my_nav4">
+        <a href="" id="link9">link</a>
+        <a href="" id="link10">link</a>
+        <a href="" id="link11">link</a>
+        <a href="" id="link12">link</a>
+      </p>
+    </div>
+  </li>
+ <p id="stack1">Full stack
+  <i class="fa fa-bolt"></i>
+ </p>
+    <div class="hello" id="hi" >
+    <p >Computer</p>
+    <h3>ipad</h3>
+    <h4>Mobile</h4>
+    </div>
+    <li class="dropdown">
+      <a href="javascript:void(0);" class="NAV" onclick="filterSelection('back');ShineFunction('myclicks');blockFunction('hi');">
+        <i class="fa fa-caret-down"></i>
+      </a>
+    <div class="dropdown_content">
+      <div class="Mymenu">
+        <div id="myclicks">
+          <div class="column1">
+            <span class="span1">
+            <a href="javascript:void(0);" onclick="ShineFunction('myclicks');">
+              <img id="mylogo" src="./image/cl7-nobg.png" alt=""></a>
+          </span>
+          </div>
+
+          <div id="myBtnContainer">
+            <button class="btn1" onclick="filterSelection('about');OpacityFunction('myclicks');NoneFunction('hi');"> About</button>
+            <button class="btn2" onclick="filterSelection('info');OpacityFunction('myclicks');NoneFunction('hi');"> Info</button>
+            <button class="btn3" onclick="filterSelection('skill');OpacityFunction('myclicks');NoneFunction('hi');">Skill</button>
+            <button class="btn4" onclick="filterSelection('myproj');OpacityFunction('myclicks');NoneFunction('hi');">My project</button>
+            <button class="btn5" onclick="filterSelection('blockcontext');OpacityFunction('myclicks');NoneFunction('hi');"> Text</button>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </li>
+  <div class="icon"><a class="fa fa-github" href="https://github.com/tuongclearlove7"></a></div>   
+  <div class="icon2"><a class="fa fa-instagram" href="https://www.instagram.com/"></a></div>  
+  <div class="icon3"> <a class="fa fa-facebook-square"href="https://www.facebook.com/Ytttuong1/" ></a></div> 
+  <div class="icon4"> <a class="fa fa-twitter" href="https://twitter.com/?lang=vi"></a></div>  
+  <div class="icon5"><a class="fa fa-apple" href="https://www.apple.com/"></a></div>
+
+
+ <div class="main" >
+    <div class="COUMNN about" >
       <div class="contentabout">
     
         <h2 class="textabout">about</h2>
@@ -88,7 +149,21 @@
     <div class="COUMNN info">
       <div class="contentinfo">
           <h2 class="textinfo">info</h2>
-          <img class="infoimage"  src="./image/info2.png" alt="">
+          <img class="infoimage"  src="./image/info2.png" aria-labelledby="explore-dropdown" alt="">
+          <div class="grid-container">
+            <img class="item1" width="200px" height="200px" src="./image/emyeu/emyeu1.png">
+            <img class="item2" width="200px" height="200px" src="./image/emyeu/emyeu2.jpg">
+            <img class="item3" width="200px" height="200px" src="./image/emyeu/emyeu3.jpg">
+            <img class="item4" width="200px" height="200px" src="./image/emyeu/emyeu4.jpg">
+            <img class="item5" width="200px" height="200px" src="./image/emyeu/emyeu5.jpg">
+            <img class="item6" width="200px" height="200px" src="./image/emyeu/emyeu6.jpg">
+            <img class="item7" width="200px" height="200px" src="./image/emyeu/emyeu7.jpg">
+            <img class="item8" width="200px" height="200px" src="./image/emyeu/emyeu8.jpg">  
+            <img class="item9" width="200px" height="200px" src="./image/emyeu/emyeu9.jpg">  
+            <img class="item10" width="200px" height="200px" src="./image/emyeu/emyeu10.png">  
+            <img class="item11" width="200px" height="200px" src="./image/emyeu/emyeu11.jpg">  
+            <img class="item12" width="200px" height="200px" src="./image/emyeu/emyeu11.jpg">  
+          </div>
       </div>
     </div>
     
@@ -112,61 +187,47 @@
     
         <div class="Mycontext" onclick="console.log(this);">
           <span class="context">
-            success: "thành công",age: "tuổi",successfully:"thành công",deploy:"triển khai",
-            install : "tải về",download:"tải xuống",fuck : "chết tiệt",page : "trang",horizontal:'nằm ngang, thuộc về chân trời',
-            mark : "dấu",snake : SearchBot[28],my : "mãi mãi",socket : "ổ cắm",depend:'tùy, tùy thuộc vào',
-            pass : "qua , đưa qua, cho qua",local : "cục bộ, địa phương",password : "mật khẩu",
-            archive : "lưu trữ",tets : SearchBot[27],standalone : "Độc lập",information : "thông tin",
-            system : "hệ thống",job : "công việc",mountain:"núi",tree:"cây ",rush:"cây bấc",synchronized:'đồng bộ',
-            technical : "kỹ thuật",technology : "công nghệ", invironment : "môi trường",scene : "bối cảnh",
-            screen : "màn hình",component : "thành phần", comment : "bình luận",code : "mã", launch:"phóng",
-            source : "nguồn",commit:"cam kết",book : "sách",place : "vị trí",marketplace : "thường trường",
-            market : "thị trường , chợ",supermarket:"siêu thị",exchange : "giao lưu", chat : "trò chuyện",
-            trash : "rác rưởi", garbage : "rác",know : "biết",get : "mắc phải",request : "yêu cầu",
-            quick : "nhanh chóng", test : "thử",use : "sử dụng", user:"người dùng",graphic : "đồ họa",
-            config:"cấu hình",inter : "chôn cất",face : "mặt, đối mặt", pointer : "con trỏ",impossible:'không thể nào',
-            falcon : "chim ưng", heave : "phập phồng",hear : "nghe",match : "trận đấu",math : "toán",
-            twist : "vặn",change : "thay đổi",none : "không ai",null : "vô giá trị",view : "lượt xem",
-            see : "trông thấy , xem",active:"tích cực",negative : "từ chối",service : "dịch vụ",async:'không đồng bộ',
-            engine : "động cơ",game : "trò chơi",play : "chơi",player : "người chơi",work : "công việc , làm việc",
-            convert : "chuyển đổi",for : "vì",because:"bởi vì",beautiful:"đẹp , xinh đẹp",bad : "tệ",
-            so : "rất",sad : "buồn bã",disappointed : "thất vọng ",native : "tự nhiên",control :"điều khiển",
-            express : "bày tỏ",expression : "biểu hiện",ruler : "cây thước",rule : "luật lệ",water : "nước",
-            football : "bóng đá",soccer : "đá bóng",liquid : "chất lỏng",clear : "thông thoáng , xóa, quét",
-            clean :"dọn dẹp",love : "yêu",nice : "đẹp",good : "tốt",an :"một",A : "1",find : "tìm , tìm thấy",
-            more: "hơn",most :"hầu hết",stop : "dừng lại",next : "tiếp tục, kế tiếp",mess :"sự lộn xộn",
-            message : "tin nhắn",massage : "mát xa",comfortable:"thoải mái",very : "rất",done :"xong",
-            package:"bưu kiện",pack:"đóng gói",contruct : "xây dựng",submation:"sự phụ thuộc",//  navigator
-            subtraction : "phép trừ",any : "không có gì",do:"làm",while:"trong khi",loop:"lặp, lặp lại",
-            perform:"thực hiện",flatform : "hình phẳng",flat:"bằng phẳng",form : "biểu mẫu",items :'mặt hàng',
-            template:"bản mẫu",temp:"nhân viên bán thời gian",tamed:"thuần hóa",Notification:"thông báo",
-            server:"máy chủ",remote:"xa xôi",verify:"xác minh",token:"mã thông báo",application:"ứng dụng",
-            software:"phần mềm",tool:"dụng cụ",login:"đăng nhập",signin:"đăng nhập",development:'sự phát triển',
-            console:"bàn điều khiển",extension:"sự mở rộng",explore:"khám phá",export:"xuất khẩu",import:'nhập khẩu',
-            Attachment:"tập tin đính kèm",signup:"đăng ký",element : "các yếu tố",encode:"mã hóa",product:'sản phẩm',
-            decode:"giải mã",boot:"khởi động",root:"nguồn gốc",document:"tài liệu",directory:"danh mục",
-            dictionary:"từ điển",dict :"mệnh lệnh",direct:"trực tiếp, thẳng thắn",engineer : "kỹ sư",develop:'phát triển',
-            spam:"❌ stop! không được spam ❌",VN: "Việt nam vô địch, Việt Nam number one1 😂",developer:'nhà phát triển',
-            war : "❌ stop! không được phép nói tục ❌",russia: SearchBot[30],Einstein:SearchBot[31],
-            newton:SearchBot[32],hacker:SearchBot[33],communism:`${received_message.text} : `+SearchBot[34],
-            stackoverflow:SearchBot[35],language:"ngôn ngữ",received:"nhận",program:"chương trình",programming:"lập trình",
-            foreign :"ngoại quốc",my :"của tôi",champion :'vô địch',lose  :"thua",win  :"thắng",height  :"chiều cao",width  :"chiều rộng",
-            main :"chính",origin :"gốc",value :"giá trị",default :"mặc định",navigator :"hao tiêu",display:'giao diện',
-            string :"chuỗi",integer :"số nguyên",decimal :"số thập phân",prime :"số nguyên tố",invalid:'không hợp lệ',
-            print :'in',paint :"sơn",publish :"xuất bản",list :"danh sách",push :"đẩy",error :"lỗi",contact:'tiếp xúc',
-            warning :"cảnh báo",translate :"dịch",invite :"mời",cross :"đi qua",right :"phải",left :"trái",latitude:'vĩ độ',
-            intial :'bên trong',index :"mục lục",try :"thử",press :"nhấn",phising :"lừa đảo",longitude:'kinh độ',
-            plugin :"cắm vào",upper :"viết hoa",lower :"viết thường",reserved :"kín đáo",property :"tài sản",//inter
-            mason :"thợ nề",space :"khoảng cách, không gian",pain :"đau đớn",new :"mới",content :"nội dung",
-            navigative:'điều hướng',visual:'trực quan',slogan:'khẩu hiệu',great:'tuyệt vời',direction:'hướng đi'
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis soluta nemo error? Ab nemo numquam, deleniti iure omnis nihil eaque sequi earum veritatis vitae voluptate minus in, excepturi suscipit provident.
          </span>
          </div>
       </div>
     </div>
+    <div id="cl2" class="column2"></div>
+
+    <li class="dropdown_icon">
+      <a href="javascript:void(0);" class="NAV_icon" id="mytime" onclick="" ></a>
+      <script>  
+        let date = new Date();
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let seconds = date.getSeconds();
+        let present = 'Time : ' + hours + ':'+ minutes + ':'+seconds;
+        console.table(present); 
+        document.getElementById('mytime').innerHTML = present;
+        </script>
+       </a>
+       <div class="dropdown_content_icon">
+        <p class="my_nav_icon">
+          <a href="" id="mobile_link1">Link</a>
+              <a href="" id="mobile_link2">Link</a>
+              <a href="" id="mobile_link3">Link</a>
+              <a href="" id="mobile_link4">Link</a>
+              <a href="" id="mobile_link5">Link</a>
+        </p>
+      </div>
+    </li>
+
   </body>
-  
-  <div class="con">
+  <footer class="con">
     <p  href="" class="license">© - By Clearlove7★. Profile 2022</p> 
-    </div>
+    </footer>
   </html>
-  
+
+
+
+
+
+
+
+
+

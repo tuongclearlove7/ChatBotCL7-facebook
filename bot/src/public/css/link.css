@@ -1,0 +1,156 @@
+#link1{
+
+    color: #ffffff;
+    position: fixed;
+    width: 87px;
+    height: 30px;
+    font-size: 20px;
+    top: 100px;
+    left: 150px;
+}
+#link2{
+
+    color: #ffffff;
+    position: fixed;
+    width: 87px;
+    height: 30px;
+    font-size: 20px;
+    top: 180px;
+    left: 150px;
+}
+#link3{
+
+    color: #ffffff;
+    position: fixed;
+    width: 87px;
+    height: 30px;
+    font-size: 20px;
+    top: 265px;
+    left: 150px;
+}
+#link4{
+
+    color: #ffffff;
+    position: fixed;
+    width: 87px;
+    height: 30px;
+    font-size: 20px;
+    top: 355px;
+    left: 150px;
+}
+
+
+#link5{
+
+    color: #ffffff;
+    position: fixed;
+    width: 87px;
+    height: 30px;
+    font-size: 20px;
+    top: 100px;
+    left: 302px;
+}
+#link6{
+
+    color: #ffffff;
+    position: fixed;
+    width: 87px;
+    height: 30px;
+    font-size: 20px;
+    top: 180px;
+    left: 302px;
+}
+#link7{
+
+    color: #ffffff;
+    position: fixed;
+    width: 87px;
+    height: 30px;
+    font-size: 20px;
+    top: 265px;
+    left: 302px;
+}
+#link8{
+
+    color: #ffffff;
+    position: fixed;
+    width: 87px;
+    height: 30px;
+    font-size: 20px;
+    top: 355px;
+    left: 302px;
+}
+
+#link9{
+    color: #ffffff;
+    position: fixed;
+    width: 87px;
+    height: 30px;
+    font-size: 20px;
+    top: 100px;
+    left: 451px;
+}
+#link10{
+    color: #ffffff;
+    position: fixed;
+    width: 87px;
+    height: 30px;
+    font-size: 20px;
+    top: 180px;
+    left: 451px;
+}
+#link11{
+    color: #ffffff;
+    position: fixed;
+    width: 87px;
+    height: 30px;
+    font-size: 20px;
+    top: 265px;
+    left: 451px;
+}
+#link12{
+    color: #ffffff;
+    position: fixed;
+    width: 87px;
+    height: 30px;
+    font-size: 20px;
+    top: 355px;
+    left: 451px;
+}
+
+#mobile_link1{
+    position: fixed;
+    color: #ffffff;
+    top: 100px;
+    left: 8%;
+}
+#mobile_link2{
+    position: fixed;
+    color: #ffffff;
+    top: 100px;
+    left: 26%;
+}
+#mobile_link3{
+    position: fixed;
+    color: #ffffff;
+    top: 100px;
+    left: 45%;
+}
+#mobile_link4{
+ 
+    position: fixed;
+    color: #ffffff;
+    top: 100px;
+    left: 63%;
+}
+#mobile_link5{
+  
+    position: fixed;
+    color: #ffffff;
+    top: 100px;
+    left: 82%;
+}
+
+#mobile_link1,#mobile_link2,#mobile_link3,#mobile_link4,#mobile_link5{
+  font-family: cursive;
+}

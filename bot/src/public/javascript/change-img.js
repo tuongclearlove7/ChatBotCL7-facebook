@@ -15,15 +15,6 @@ let list_imgs = [
 let i = 0;
 let Timeleft=1000;
 
-let FuncCount = (CountImg) => { 
-    for (let idx = 0; idx < list_imgs.length; idx++) {
-        CountImg++
-    }
-    return CountImg;
-}
-
-console.log("Count image : " + FuncCount(i));
-
 function change_background() {
     document.slide.src = list_imgs[i];
         if(i < list_imgs.length - 1) {
@@ -34,6 +25,15 @@ function change_background() {
         }
     setTimeout("change_background()",Timeleft);
 }
+
+let FuncCount = (CountImg) => { 
+    for (let idx = 0; idx < list_imgs.length; idx++) {
+        CountImg++
+    }
+    return CountImg;
+}
+
+console.log("Count image : " + FuncCount(i));
 window.onload = change_background;
 
 

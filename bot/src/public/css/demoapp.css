@@ -1,6 +1,7 @@
-html{
+html,body{
     background-size: 200%;
     text-align: center;
+    z-index: -100;
     /* background: linear-gradient(to right, silver, white, silver	 100%); */
 }
 *{
@@ -9,22 +10,35 @@ html{
     box-sizing: border-box;
     font-family: "Fredoka", serif;
 }
-body {
-    list-style: none;
-}
 
-.Myheader{
+.Left_Header {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
+    transition: all 0.5s ease;
+    cursor: pointer;
     background-color: #1f1f1f;
     border: 2px solid black;
     width: 85px;
     height: 55px;
-    margin: 0px 0px 0px 0px;
+    left: 0px;
+}
+.Left_Header:hover{
+    opacity: 1;
+    background-color: rgb(215 7 82);
+    
+}
+.Right_Header {
+    position: fixed;
+    z-index: 10;
+    background-color: #1f1f1f;
+    border: 2px solid black;
     transition: all 0.5s ease;
     cursor: pointer;
+    width: 86px;
+    height: 55px;
+    right: 0px;
 }
-.Myheader:hover{
+.Right_Header:hover{
     opacity: 1;
     background-color: rgb(215 7 82);
     
@@ -35,10 +49,8 @@ body {
     cursor: pointer;
     width: 100%;
     height: 55px;
-    margin: 0px 0px 0px 83px;
-    background: linear-gradient(to right, silver, white, silver	 100%);
-    border: 2px solid black;
-    
+    margin: 0px 0px 0px 0px;
+    background: rgb(238, 72, 11);
 }
 .Myheader2:hover{
     transition: all 1s ease;
@@ -47,12 +59,11 @@ body {
 
 div.icon a{
     position: fixed;
-    z-index: 1;
+    z-index: 20;
     height: 0;
-    top: 22px;
-    left: -30%;
-    right: 0px;
-    color: black;
+    top: 120px;
+    right: 35px;
+    color: white;
     font-size: 15px;
     transition: all 0.5s ease;
     text-decoration: none;
@@ -64,12 +75,11 @@ div.icon a:hover{
 
 div.icon2 a{
     position: fixed;
-    z-index: 1;
+    z-index: 20;
     height: 0;
-    top: 22px;
-    left: -15%;
-    right: 0px;
-    color: black;
+    top: 200px;
+    right: 35px;
+    color: white;
     font-size: 15px;
     transition: all 0.5s ease;
     text-decoration: none;
@@ -82,12 +92,11 @@ div.icon2 a:hover{
 
 div.icon3 a{
     position: fixed;
-    z-index: 1;
+    z-index: 20;
     height: 0;
-    top: 22px;
-    left: 1%;
-    right: 0px;
-    color: black;
+    top: 280px;
+    right: 35px;
+    color: white;
     font-size: 15px;
     transition: all 0.5s ease;
     text-decoration: none;
@@ -99,12 +108,11 @@ div.icon3 a:hover{
 
 div.icon4 a{
     position: fixed;
-    z-index: 1;
+    z-index: 20;
     height: 0;
-    top: 22px;
-    left: 18%;
-    right: 0px;
-    color: black;
+    top: 360px;
+    right: 35px;
+    color: white;
     font-size: 15px;
     transition: all 0.5s ease;
     text-decoration: none;
@@ -116,12 +124,11 @@ div.icon4 a:hover{
 
 div.icon5 a{
     position: fixed;
-    z-index: 1;
+    z-index: 20;
     height: 0;
-    top: 22px;
-    left: 35%;
-    right: 0px;
-    color: black;
+    top: 440px;
+    right: 35px;
+    color: white;
     font-size: 15px;
     transition: all 0.5s ease;
     text-decoration: none;
@@ -131,26 +138,61 @@ div.icon5 a:hover{
     color: silver;   
 }
 
-.Time-line{
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-    top: 30px;
-    left: 130px;
-    width: 10%;
-    
-}
-#mytime{
+.myhome{
     position: fixed;
-    top: 22px;
-    right: 7px;
-    color: black;
-    font-family: ui-monospace;
-    display: flex;
-    font-size: 10px;
+    top: 19px;
+    font-size: 20px;
+    left: 13px;
+    z-index: 2;
+    text-decoration: none;
+    color: white;
     transition: all 0.5s ease;
-    z-index: 1;
 }
-#mytime:hover{
-    color: blue;
+.myhome:hover{
+    color: aqua;
 }
+
+#stack1{
+    position: fixed;
+    font-family: fantasy;
+    font-weight: bold;
+    font-style: oblique;
+    color: black;
+    text-shadow: -1px 0 white, 0 2px white, 2px 0 white, 0 -1px white;
+    transition: all 0.5s ease;
+    z-index: 5;
+    top: 11px;
+    left: 75%;
+    right: 30px;
+    font-size: 30px;
+    width: 16%;
+}
+@media screen and (max-width:1000px) {
+    #stack1{
+        position: fixed;
+        top: 18px;
+        left: 76%;
+        right: 30px;
+        font-size: 20px;
+        width: 13%;
+    }
+}
+
+/* @media screen and (max-width:950px) {
+    #stack1{
+        display: none;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+

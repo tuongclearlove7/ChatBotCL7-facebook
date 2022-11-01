@@ -1,0 +1,137 @@
+/* miniphone */
+@media only screen and (max-width: 250px){
+    .Myheader2{
+        background-color: red;
+    }
+    .Left_Header, .Right_Header{
+        display: none;
+    }
+    .dropdown2,.dropdown3 {
+        display: none;   
+    }
+    .NAV{
+        display: none;
+    }
+    .myhome{
+        display: none;
+    }
+    .btnback{
+        display: none;
+    }
+    .mobilemenu {
+        display: none;
+    }
+    .column1 {
+        display: none;
+    }
+     div .column1 {
+    
+        display: none;
+        
+    }
+    .btn1 {
+    
+        display: none;
+        
+    }
+    .btn2 {
+    
+        display: none;
+        
+    }
+    .btn3 {
+    
+        display: none;
+        
+    }
+    .btn4 {
+    
+        display: none;
+        
+    }
+    .btn5 {
+    
+        display: none;
+        
+    }
+    div.icon a {
+        position: fixed;
+        z-index: 1;
+        height: 0;
+        top: 22px;
+        left: -70%;
+        right: 0px;
+        color: white;
+        font-size: 10px;
+        transition: all 0.5s ease;
+        text-decoration: none;
+    }
+    div.icon2 a {
+        position: fixed;
+        z-index: 1;
+        height: 0;
+        top: 22px;
+        left: -37%;
+        right: 0px;
+        color: white;
+        font-size: 10px;
+        transition: all 0.5s ease;
+        text-decoration: none;
+    }
+    div.icon3 a {
+        position: fixed;
+        z-index: 1;
+        height: 0;
+        top: 22px;
+        left: -5%;
+        right: 0px;
+        color: white;
+        font-size: 10px;
+        transition: all 0.5s ease;
+        text-decoration: none;
+    }
+    div.icon4 a {
+        position: fixed;
+        z-index: 1;
+        height: 0;
+        top: 22px;
+        left: 30%;
+        right: 0px;
+        color: white;
+        font-size: 10px;
+        transition: all 0.5s ease;
+        text-decoration: none;
+    }
+    div.icon5 a {
+        position: fixed;
+        z-index: 1;
+        height: 0;
+        top: 22px;
+        left: 66%;
+        right: 0px;
+        color: white;
+        font-size: 10px;
+        transition: all 0.5s ease;
+        text-decoration: none;
+    }
+    #mytime{
+        top: 24px;
+        right: 9px;
+        font-size: 5px;
+    }
+    .hello p, .hello h4{
+        position: fixed;
+        z-index: 0;
+        height: 0;
+        top: 15%;
+        left: 14%;
+        right: 0px;
+        width: 65%;
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 250px){
+    .dropdown_icon{
+        display: none;
+    }
+}

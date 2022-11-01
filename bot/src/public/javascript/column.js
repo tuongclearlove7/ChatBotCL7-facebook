@@ -1,16 +1,14 @@
 function myFunction() {
 
-    var x = document.getElementById("myLinks");
-  
-    switch (x.style.display) {
-      
+    var myclick1 = document.getElementById('myclicks');
+ 
+    switch (myclick1.style.display) {
           case 'block':
-              x.style.display = "none";
+            myclick1.style.display = "none";
           break;
-
           default:
-              x.style.display = "block";
-          break;
+            myclick1.style.display = "block";
+          break;    
     }
 }
 

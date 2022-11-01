@@ -1,0 +1,199 @@
+/* mobile */
+
+@media screen and (max-width: 530px) {
+    
+    #mybg,
+    #stack1{
+        display: none;
+    }
+    html{
+        background: coral;
+    }
+    .Left_Header,.Right_Header{
+       width: 50px;
+    }
+   
+    .Myheader2{
+        background: #1f1f1f;
+    }
+    .dropdown2,.dropdown3 ,.dropdown4{
+        display: none;   
+    }
+    .dropdown_icon {
+        width: 50px;
+        
+      }
+    .dropdown_icon:hover .dropdown_content_icon{
+        display: block;
+    }
+  
+    div.icon a {
+        display: block;
+        color: white;
+        font-size: 15px;
+        left: -40%;
+        top: 22px;
+     }
+     div.icon2 a {
+         display: block;
+         color: white;
+         font-size: 15px;
+         left: -16%;
+         top: 22px;
+     }
+     div.icon3 a {
+         display: block;
+         color: white;
+         font-size: 15px;
+         left: 10%;
+         top: 22px;
+     }
+     div.icon4 a {
+         display: block;
+         color: white;
+         font-size: 15px;
+         left: 37%;
+         top: 22px;
+     }
+     div.icon5 a {
+         display: block;
+         color: white;
+         font-size: 15px;
+         left: 62%;
+         top: 22px;
+     }
+    #mytime{
+        top: 26px;
+        font-size: 6px;
+        right: 5px;
+        color: white;
+    }
+    #mytime:hover{
+        color: aqua;
+    }
+    div .column1 .span1{
+        width: 50px;
+    }
+    div.column2{
+        /* 
+        position: fixed;
+        transition: all 0.5s ease 0s;
+        justify-content: space-evenly;
+        flex-flow: column; */
+        display: none;
+        width: 100%;
+        height: 20%;
+        opacity: 0.8;
+    }
+    .hello p{
+        display: none;
+    }
+    .hello h3{
+        display: none;
+    }
+    .hello h4{
+        display: block;
+        position: fixed;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        z-index: 0;
+        height: 0;
+        top: 15%;
+        left: 6%;
+        right: 0px;
+        width: 90%;
+        font-size: 30px;
+    }
+    
+    .btnback{
+        display: none;
+    }
+   .myhome{
+        display: none;
+   }
+  
+    .contentinfo{
+        height: 100%;
+    }
+    .infoimage2{
+        display: none;
+    }
+
+    div.column1 {
+        width: 50px;
+    }
+    #mylogo {  
+        width: 35px;
+        top: 110px;
+        left: 10px;
+    }
+    .btn1 {
+        width: 45px;
+        font-size: 10px;
+    }
+    .btn2 {
+            font-size: 10px;
+            width: 45px;
+    }
+    .btn3 {
+            font-size: 10px;
+            width: 45px;
+    }
+    .btn4 {
+            font-size: 10px;
+            width: 45px;
+    }
+    .btn5 {
+        font-size: 10px;
+        width: 45px;
+    }
+      
+      li.dropdown {
+        position: fixed;
+        display: inline-block;
+        z-index: 5;
+        width: 60px;
+        height: 65px;
+        font-size: 50px;
+        top: -8px;
+        left: -6px;
+      }
+      .NAV {
+        position: fixed;
+        color: white;
+        display: block;
+        text-decoration: none;
+        transform: rotate(0deg);
+        transition: all 0.7s ease;
+        top: 3px;
+        left: 10px;
+      }
+      .NAV:hover {
+          transform: rotate(360deg);
+          color: aqua;
+      }
+      .dropdown_content {
+        display: none;
+        position: fixed;
+        top: -22px;
+        font-size: 20px;
+        z-index: 0;
+      }
+      
+      .dropdown:hover .dropdown_content {
+        display: block;
+      }
+      .infoimage{
+        width: 240px;
+        bottom: 0px;
+       
+      }
+      .grid-container{
+        display: none;
+      }
+      .textskill{
+        right: 140px;
+      }
+      .skillimage{
+        width: 300px;
+      }
+}

@@ -1,0 +1,149 @@
+.contentinfo {
+    position: absolute;
+    z-index: -1;
+    height: 1000%;
+    top: 20%;
+    left: 0%;
+    right: 0px;
+}
+
+.textinfo{
+    font-family: Inter,sans-serif;
+    position: relative;
+    color: white;
+    width: 5%;
+    margin: auto;
+    right: 100px;
+    font-size: 20px;
+    bottom: 20px;
+}  
+.textinfo:hover{
+    color: #1b4955;
+}
+.infoimage{
+    display: block;
+    object-fit: cover;
+    background-clip: content-box, border-box;
+    position: relative;
+    cursor: no-drop;
+    box-shadow: 0 0 0 10px rgb(255 255 255 / 50%);
+    border-radius: 25px 25px;
+    margin: 0 auto;
+    width: 300px;
+    bottom: 0px;
+}
+.infoimage2{
+    display: block;
+    object-fit: cover;
+    background-clip: content-box, border-box;
+    transition: all 0.8s ease;
+    box-shadow: 0 0 0 5px rgb(255 255 255 / 50%);
+    position: relative;
+    cursor: zoom-in;
+    width: 500px;
+    height: 450px;
+    margin: 20 auto;
+    top: 15px;
+    opacity: 1;
+}
+.infoimage2:hover{
+    width: 530px;
+    height: 480px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    position: relative;
+    top: 100px;
+    right: 350px;
+    justify-content: center;
+  }
+  
+  .grid-container div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+.item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8,.item9,.item10,.item11{
+    grid-column: 1/3;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 0 10px rgb(255 255 255 / 50%);
+    
+  }
+.item12{
+    transition: all 0.5s ease;
+}
+.item1{
+    position: relative;
+    top: 0px;
+    left: 60px;
+}
+.item2{
+    position: relative;
+    left: 310px;
+    bottom: 200px;
+}
+.item3{
+    position: relative;
+    left: 560px;
+    bottom: 400px;
+}
+.item4{
+    position: relative;
+    left: 810px;
+    bottom: 600px;
+}
+.item5{
+    position: relative;
+    left: 60px;
+    bottom: 560px;
+}
+.item6{
+    position: relative;
+    left: 310px;
+    bottom: 760px;
+}
+.item7{
+    position: relative;
+    left: 560px;
+    bottom: 960px;
+}
+.item8{
+    position: relative;
+    left: 810px;
+    bottom: 1160px;
+}
+.item9{
+    position: relative;
+    left: 60px;
+    bottom: 1125px;
+}
+.item10{
+    position: relative;
+    left: 310px;
+    bottom: 1325px;
+}
+.item11{
+    position: relative;
+    left: 560px;
+    bottom: 1525px;
+}
+.item12{
+    position: relative;
+    left: 610px;
+    bottom: 1525px;
+    box-shadow: 0 0 0 10px rgb(255 255 255 / 50%);
+}
+
+.item1:hover, .item2:hover, .item3:hover, 
+.item4:hover,.item5:hover, .item6:hover, 
+.item7:hover, .item8:hover, .item9:hover, 
+.item10:hover, .item11:hover, .item12:hover{
+    opacity: 1;
+    width: 210px;
+    height: 210px;
+}
+

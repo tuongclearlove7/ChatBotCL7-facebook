@@ -1,22 +1,25 @@
-var key = "tuong"
-var myobject = {
+let key = "tuong"
+let mykey = "this isn't key";
+let myobject = {
     website : { 
         profile : "Profile of Clearlove7",
         WebDeveloper :{
             developer : 'TuongClearlove7',
             info : { 
+                "birth day" : {
+                    day : 16,
+                    month : 1,
+                    year : 2003
+                },
                 name : {
                     firstname : "tran",
-                    midllename : "the", 
+                    middlename : "the", 
                     lastname : "tuong",
                     fullname : "Tran The Tuong",
                     nickname :  "Clearlove7",
-                    "Sort name" : ['tran','the','tuong'],
-                    
+                    "Sort names" : ['tran','the','tuong'],
                 },
-                age : {
-                    myage : 20
-                },
+                age : 20,
                 address : {
                     continents : "Asia",
                     country : "Viet Nam",
@@ -27,8 +30,31 @@ var myobject = {
                         "street name" : 'Nguyen Khuyen',
                         "home number" : '31',
                     }
-                },
+                },  
             },
+            about : {
+                "Lucky number" : 7,
+                "School of Dev" : "Duy Tan",
+                crush : {
+                    hide : {
+                        slogan : "Thao oi anh yeu em nhieu lam !",
+                        firstname : "Ho",
+                        middlename2 : "Thi",
+                        middlename : "Phuong",
+                        lastname : "Thao",
+                        nickname : "Rose",
+                        fullname : "Ho Thi Phuong Thao",
+                        "Sort names": ["Ho","Thi","Phuong","Thao"],
+                        age : 19,
+                        "birth day" : {
+                            day : 9,
+                            month : 9,
+                            year : 2003
+                        },
+                        "School of Crush" : "Duy Tan",
+                    }
+                },     
+            }
         }
     },
     [key] : {
@@ -38,13 +64,13 @@ var myobject = {
        
             return myobject.website; // this or  myobject
     },
-    getkey : function(){
-        return this["this isn't key"];
+    getkey : function(errkey){
+        return this[errkey];//dfdsfdfdfsdfsđfdsfdsf
     },
 };
 
 console.log(myobject.myinfo())
-console.log(myobject.getkey())
+console.log(myobject.getkey(mykey))
 
 
 
