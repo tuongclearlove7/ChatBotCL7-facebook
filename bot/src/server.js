@@ -18,7 +18,7 @@ initWrbrouter(app);
 // connect_db();
 
 
-let port = process.env.PORT || 8080;
+let port = process.env.PORT || 3000;
 
 app.listen(port, () => {
     console.log("App profile is running on port : ", port);

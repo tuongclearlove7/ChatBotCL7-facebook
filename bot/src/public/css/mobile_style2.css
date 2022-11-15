@@ -16,7 +16,7 @@
     .Myheader2{
         background: #1f1f1f;
     }
-    .dropdown2,.dropdown3 ,.dropdown4{
+    .dropdown2,.dropdown3 ,.dropdown4,.ads_left,.ads_right{
         display: none;   
     }
     .dropdown_icon {
@@ -150,7 +150,7 @@
       li.dropdown {
         position: fixed;
         display: inline-block;
-        z-index: 5;
+        z-index: 30;
         width: 60px;
         height: 65px;
         font-size: 50px;
@@ -164,7 +164,8 @@
         text-decoration: none;
         transform: rotate(0deg);
         transition: all 0.7s ease;
-        top: 3px;
+        
+        top: 5px;
         left: 10px;
       }
       .NAV:hover {
@@ -182,6 +183,14 @@
       .dropdown:hover .dropdown_content {
         display: block;
       }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: -7px;
+        right: 10px;
+        font-size: 30px;
+      }
+
       .infoimage{
         width: 240px;
         bottom: 0px;

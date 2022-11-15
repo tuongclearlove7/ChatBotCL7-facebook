@@ -23,19 +23,18 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <!-- <script src="./javascript/column.js"></script> -->
+      <script src="./javascript/api.js"></script>
       <script src="./javascript/mobile_column.js"></script>
       <script src="https://www.w3schools.com/lib/w3.js"></script>
-      <script src="./javascript/clock.js"></script>
       <script src="./javascript/place.js"></script>
-      <script src="./javascript/api.js"></script>
       <script src="./javascript/select_element.js"></script>
-      <script src="./javascript/change-img.js"></script>
+      <!-- <script src="./javascript/change-img.js"></script> -->
   </head>
   <body class="preloading">      
-    <img name="slide" alt="" id="mybg">
+    <!-- <img name="slide" alt="" id="mybg"> -->
+    <img id="mybg" src="./css/img/bg12.jpg">
       <div class="Left_Header"> </div>
-         <!-- <div class="Right_Header"> </div> -->
+         <div class="Right_Header"> </div>
         <div class="mobileContainer">
           <a href="javascript:void(0);" class="myhome" onclick="ClickFunction('myclicks');">
             <i class="fa fa-home"></i>
@@ -147,22 +146,11 @@
     </div>
     
     <div class="COUMNN info">
-      <div class="contentinfo">
+      <div  class="contentinfo">
           <h2 class="textinfo">info</h2>
           <img class="infoimage"  src="./image/info2.png" aria-labelledby="explore-dropdown" alt="">
-          <div class="grid-container">
-            <img class="item1" width="200px" height="200px" src="./image/emyeu/emyeu1.png">
-            <img class="item2" width="200px" height="200px" src="./image/emyeu/emyeu2.jpg">
-            <img class="item3" width="200px" height="200px" src="./image/emyeu/emyeu3.jpg">
-            <img class="item4" width="200px" height="200px" src="./image/emyeu/emyeu4.jpg">
-            <img class="item5" width="200px" height="200px" src="./image/emyeu/emyeu5.jpg">
-            <img class="item6" width="200px" height="200px" src="./image/emyeu/emyeu6.jpg">
-            <img class="item7" width="200px" height="200px" src="./image/emyeu/emyeu7.jpg">
-            <img class="item8" width="200px" height="200px" src="./image/emyeu/emyeu8.jpg">  
-            <img class="item9" width="200px" height="200px" src="./image/emyeu/emyeu9.jpg">  
-            <img class="item10" width="200px" height="200px" src="./image/emyeu/emyeu10.png">  
-            <img class="item11" width="200px" height="200px" src="./image/emyeu/emyeu11.jpg">  
-            <img class="item12" width="200px" height="200px" src="./image/emyeu/emyeu11.jpg">  
+          <div id="grid__container" class="grid-container">
+          <script src="./javascript/Dom.js"></script>
           </div>
       </div>
     </div>
@@ -193,32 +181,60 @@
       </div>
     </div>
     <div id="cl2" class="column2"></div>
-
-    <li class="dropdown_icon">
-      <a href="javascript:void(0);" class="NAV_icon" id="mytime" onclick="" ></a>
-      <script>  
-        let date = new Date();
-        let hours = date.getHours();
-        let minutes = date.getMinutes();
-        let seconds = date.getSeconds();
-        let present = 'Time : ' + hours + ':'+ minutes + ':'+seconds;
-        console.table(present); 
-        document.getElementById('mytime').innerHTML = present;
-        </script>
+    
+   
        </a>
-       <div class="dropdown_content_icon">
-        <p class="my_nav_icon">
-          <a href="" id="mobile_link1">Link</a>
-              <a href="" id="mobile_link2">Link</a>
-              <a href="" id="mobile_link3">Link</a>
-              <a href="" id="mobile_link4">Link</a>
-              <a href="" id="mobile_link5">Link</a>
-        </p>
+       <div id="Nav_Mobile" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('Nav_Mobile');">&times;</a>
+        <div class="overlay_tab">
+          <a href="#" onclick="NoneFunction('hi');">Algorithms</a>
+          <a href="#">Services</a>
+          <a href="#">Knowledge</a>
+          <a href="#">Contact</a>
+        </div>
       </div>
-    </li>
-
+      <a href="javascript:void(0);" class="Open_NAV_time" id="mytime"onclick="openNav('Nav_Mobile');" >
+        <script src="./javascript/clock.js"></script>
+      </a>
+    
+    <div id="fb-root"></div>
+    <div id="fb-customer-chat" class="fb-customerchat"> </div>
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "117828560890633");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v15.0'
+        });
+      };
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+   
   </body>
-  <footer class="con">
+  <footer class="MyFooter">
+    <p class="stack2">Full stack
+      <i class="fa fa-bolt"></i>
+    </p>
+    <div class="ads_left">
+      <a href="">Product</a>
+      <a href="">Security</a>
+      <a href="">Blog</a>
+      <a href="">Shop</a>
+    </div>
+    <div class="ads_right">
+      <a href="">Front-end</a>
+      <a href="">Back-end</a>
+      <a href="">Development</a>
+      <a href="">Technologies</a>
+    </div>
     <p  href="" class="license">© - By Clearlove7★. Profile 2022</p> 
     </footer>
   </html>

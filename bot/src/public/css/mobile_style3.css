@@ -56,7 +56,6 @@
     }
     div.icon a {
         position: fixed;
-        z-index: 1;
         height: 0;
         top: 22px;
         left: -70%;
@@ -68,7 +67,6 @@
     }
     div.icon2 a {
         position: fixed;
-        z-index: 1;
         height: 0;
         top: 22px;
         left: -37%;
@@ -80,7 +78,6 @@
     }
     div.icon3 a {
         position: fixed;
-        z-index: 1;
         height: 0;
         top: 22px;
         left: -5%;
@@ -92,7 +89,6 @@
     }
     div.icon4 a {
         position: fixed;
-        z-index: 1;
         height: 0;
         top: 22px;
         left: 30%;
@@ -104,7 +100,6 @@
     }
     div.icon5 a {
         position: fixed;
-        z-index: 1;
         height: 0;
         top: 22px;
         left: 66%;

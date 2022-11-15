@@ -1,6 +1,6 @@
 .contentabout {
     position: absolute;
-    z-index: -10;
+    z-index: 1;
     height: 100%;
     top: 30%;
     left: 0%;

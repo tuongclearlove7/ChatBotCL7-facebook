@@ -1,5 +1,6 @@
 #mybg {
     position: fixed;
+    display: block;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -134,7 +135,7 @@ div.text a:hover{
 }
 div.column1 .span1{
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     display: table;
     cursor: pointer;
     margin: 37px 0px 0px -8px;
@@ -147,7 +148,7 @@ div.column1 .span1{
 }
 div.column2{
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     display: table;
     cursor: pointer;
     display: block;
@@ -174,15 +175,16 @@ div.column2{
     opacity: 10;
     top: 100px;
 }
-.con {
+
+.MyFooter {
     position: fixed;
-    background-color: black;
-    opacity: 0.9;
-    z-index: 0;
+    background-color: #1f1f1f;
+    opacity: 0.8;
+    z-index: 1;
     left: 0px;
     bottom: 0rem;
     width: 100%;
-    height: 80px;
+    height: 130px;
 }
 .license{
     text-decoration: none;
@@ -191,14 +193,57 @@ div.column2{
     color: chartreuse;
     display: flex;
     justify-content: center;
-    z-index: 1000;
-    bottom: 10px;
+    bottom: 30px;
     width: 100%;
     object-fit: cover;
     font-size: 11px;
-    
 }
 .license:hover{
     color: white;
     text-decoration: none;
+}
+.stack2{
+    text-decoration: none;
+    position: fixed;
+    font-family: fantasy;
+    color: rgb(238, 72, 11);
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    z-index: 1000;
+    text-shadow: -1px 0 white, 0 2px white, 2px 0 white, 0 -1px white;
+    font-size: 20px;
+    bottom: 60px;
+    width: 100%;
+}
+.ads_left{
+    position: fixed;
+    z-index: 1001;
+    left: 70px;
+    bottom: 20px;
+    width: 20%;
+}
+.ads_right{
+    position: fixed;
+    z-index: 1001;
+    right:  70px;
+    bottom: 20px;
+    width: 27%;
+}
+.ads_left a,.ads_right a{
+    padding: 10px;
+    font-size: 13px;
+    color: rgb(128, 128, 128);
+}
+.ads_left a:hover,.ads_right a:hover{
+    text-decoration: underline;
+    color: #58a6ff;
+}
+
+
+@media only screen and (max-width: 1250px){
+    .ads_left{
+        width: 20%;
+        left: 80px;
+    }
 }

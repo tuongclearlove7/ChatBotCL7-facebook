@@ -28,7 +28,7 @@ div .column2{
     display: inline-block;
     background: rgb(238, 72, 11); 
     transition: all 0.7s ease;
-    z-index: 5;
+    z-index: 30;
     width: 90px;
     height: 54px;
     font-size: 20px;
@@ -41,7 +41,7 @@ div .column2{
     display: inline-block;
     background: rgb(238, 72, 11); 
     transition: all 0.7s ease;
-    z-index: 5;
+    z-index: 30;
     width: 90px;
     height: 54px;
     font-size: 20px;
@@ -53,28 +53,12 @@ div .column2{
     display: inline-block;
     background: rgb(238, 72, 11); 
     transition: all 0.7s ease;
-    z-index: 5;
+    z-index: 30;
     width: 90px;
     height: 54px;
     font-size: 20px;
     top: 0px;
     left: 450px;
-  }
-  .dropdown_icon{
-    position: fixed;
-    display: inline-block;
-    background: #1f1f1f;
-    transition: all 0.7s ease;
-    border: 2px solid black;
-    z-index: 5;
-    width: 86px;
-    height: 55px;
-    font-size: 20px;
-    top: 0px;
-    right: 0px;
-  }
-  .dropdown_icon:hover{
-    background-color: rgb(215 7 82);
   }
 
   .dropdown2:hover,.dropdown3:hover,.dropdown4:hover{
@@ -110,18 +94,8 @@ div .column2{
     top: 21px;
     left: 467px;
   }
-  .NAV_icon{
-    position: fixed;
-    color: white;
-    display: block;
-    text-decoration: none;
-    transition: all 0.7s ease;
-    font-size: 10px;
-    top: 25px;
-    right: 13px;
-  }
   
-  .NAV2:hover,.NAV3:hover,.NAV4:hover,.NAV_icon:hover{
+  .NAV2:hover,.NAV3:hover,.NAV4:hover,.Open_NAV_time:hover{
       color: aqua;
   }
   .dropdown_content2 {
@@ -151,23 +125,13 @@ div .column2{
     font-size: 20px;
     z-index: 0;
   }
-  .dropdown_content_icon {
-    transition: all 0.7s ease;
-    display: none;
-    position: fixed;
-    top: 54px;
-    left: 248px;
-    font-size: 20px;
-    z-index: 0;
-  }
+ 
   
   .dropdown2:hover .dropdown_content2,.dropdown3:hover .dropdown_content3, 
   .dropdown4:hover .dropdown_content4{
     display: block;
   }
-  .dropdown_icon:hover .dropdown_content_icon{
-    display: none;
-  }
+
   .my_nav2{
     position: fixed;
     font-family: Inter,sans-serif;
@@ -178,8 +142,9 @@ div .column2{
     color: #fff;
     background-color: #1f1f1f;
     transition: all 0.8s ease;
-    width: 89px;
-    height: 360px;
+    border-radius: 5px 5px;
+    width: 240px;
+    height: 250px;
     left: 148.5px;
     top: 54px;
   }
@@ -193,8 +158,9 @@ div .column2{
     color: #fff;
     background-color: #1f1f1f;
     transition: all 0.8s ease;
-    width: 89px;
-    height: 360px;
+    border-radius: 5px 5px;
+    width: 240px;
+    height: 250px;
     left: 300.5px;
     top: 54px;
   }
@@ -208,29 +174,65 @@ div .column2{
     color: #fff;
     background-color: #1f1f1f;
     transition: all 0.8s ease;
-    width: 89px;
-    height: 360px;
+    border-radius: 5px 5px;
+    width: 240px;
+    height: 250px;
     left: 450px;
     top: 54px;
   }
-  .my_nav_icon{
+  
+ 
+  .Open_NAV_time {
     position: fixed;
-    font-family: Inter,sans-serif;
+    color: white;
+    display: block;
+    z-index: 30;
+    text-decoration: none;
+    transition: all 0.7s ease;
+    font-size: 10px;
+    top: 25px;
+    right: 13px;
+  }
+
+  .overlay {
+    height: 0px;
+    width: 100%;
     position: fixed;
     z-index: 1;
-    display: table;
-    cursor: pointer;
-    color: #fff;
-    background-color: #1f1f1f;
-    opacity: 0.9;
-    transition: all 0.8s ease;
-    width: 100%;
-    height: 150px;
+    top: 55px;
     right: 0px;
-    top: 54px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
   }
- 
- 
+  .overlay_tab {
+    position: relative;
+    text-align: center;
+    width: 50%;
+    height: 200%;
+    top: 13px;
+    left: 26%;
+  }
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: -7px;
+    right: 90px;
+    font-size: 30px;
+  }
 
 
 

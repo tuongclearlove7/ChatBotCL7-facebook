@@ -1,4 +1,3 @@
-
 let MyStyle = {
 
     NONE: 'none',
@@ -7,12 +6,21 @@ let MyStyle = {
     TRANSITION : 'all 0.7s ease',
     FONSIZE : [],
     COLOR : [],
-
+    HIDE:  "hidden",
+    HEIGHT:["0%","25%","","",""],
     getOPACITY : function(value){
         
         return value;
     }
 }
+
+function openNav(OPEN) {
+    document.getElementById(OPEN).style.height = MyStyle.HEIGHT[1];
+  }
+  
+  function closeNav(CLOSE) {
+    document.getElementById(CLOSE).style.height = MyStyle.HEIGHT[0];
+  }
 
 for( let i = 0; i < MyStyle.OPACITY.length; i++){
 
@@ -31,7 +39,7 @@ let ClickFunction = (click) =>{
         case MyStyle.BLOCK:
 
             myclick.style.display = MyStyle.NONE;
-            myclick.style.overflow = "hidden";
+            myclick.style.overflow = MyStyle.HIDE;
             
             break;
 

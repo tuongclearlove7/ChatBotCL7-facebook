@@ -1,23 +1,14 @@
 @import "./pc.css";
 /* ipad */
-@media only screen and (min-width: 501px) and (max-width: 800px) {
-    li .dropdown, #stack1{
-        display: none;
-    }
-    .dropdown2,.dropdown3,.dropdown4 {
-        display: block;   
-    }
-    .hello p{
-        display: none;
-    }
-    .hello h3{
-        display: block;
-    }
-    #mybg{
-        display: none;
-    }
+@media only screen and (min-width: 529.9px) and (max-width: 800px) {
     html{
-        background: coral;
+      background: coral;
+    }
+    li .dropdown, #stack1,.hello p,#mybg{
+        display: none;
+    }
+    .dropdown2,.dropdown3,.dropdown4,.hello h3 {
+        display: block;   
     }
     .Left_Header{
        width: 50px;
@@ -78,7 +69,7 @@
    .myhome{
         display: none;
    }
-   .mobilemenu {
+   .NAV{
     text-decoration: none;
     transition: all 0.8s ease;
     color: white;
@@ -92,7 +83,7 @@
     left: 5px;
     transform: rotate(0deg);
     }
-    .mobilemenu:hover{
+    .NAV:hover{
         transform: rotate(360deg);
         color: aqua;
     }
@@ -223,7 +214,7 @@
         background-color: #1f1f1f;
         transition: all 0.8s ease;
         width: 89px;
-        height: 360px;
+        height: 270px;
         left: 90.5px;
         top: 54px;
       }
@@ -238,7 +229,7 @@
         background-color: #1f1f1f;
         transition: all 0.8s ease;
         width: 89px;
-        height: 360px;
+        height: 270px;
         left: 225.5px;
         top: 54px;
       }
@@ -253,7 +244,7 @@
         background-color: #1f1f1f;
         transition: all 0.8s ease;
         width: 89px;
-        height: 360px;
+        height: 270px;
         left: 361px;
         top: 54px;
       }
@@ -275,6 +266,12 @@
     #link9,#link10,#link11,#link12{
         left: 363px;
     }
+    .overlay .closebtn {
+      position: absolute;
+      top: -7px;
+      right: 60px;
+      font-size: 30px;
+    }
 }
 @media only screen and (max-width: 710px){
     #stack1{
@@ -291,7 +288,18 @@
     
 }
 
-
+@media only screen and (max-width: 640px){
+  .ads_left{
+    display: none;
+  }
+  
+}
+@media only screen and (max-width: 678px){
+  .ads_right{
+    display: none;
+  }
+  
+}
 
 
 
