@@ -175,7 +175,7 @@
     
         <div class="Mycontext" onclick="console.log(this);">
           <span class="context">
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis soluta nemo error? Ab nemo numquam, deleniti iure omnis nihil eaque sequi earum veritatis vitae voluptate minus in, excepturi suscipit provident.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reiciendis enim voluptates provident illo inventore quae eius odio recusandae voluptatem esse quaerat ad distinctio libero laudantium obcaecati, quam pariatur magni?
          </span>
          </div>
       </div>
@@ -200,22 +200,38 @@
     <div id="fb-root"></div>
     <div id="fb-customer-chat" class="fb-customerchat"> </div>
     <script>
+
       var chatbox = document.getElementById('fb-customer-chat');
+
       chatbox.setAttribute("page_id", "117828560890633");
+
       chatbox.setAttribute("attribution", "biz_inbox");
+
       window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v15.0'
-        });
+
+            FB.init({
+
+                xfbml            : true,
+                version          : 'v15.0'
+
+            });
       };
       (function(d, s, id) {
+
         var js, fjs = d.getElementsByTagName(s)[0];
+
         if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+
+            js = d.createElement(s); js.id = id;
+
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+
+            fjs.parentNode.insertBefore(js, fjs);
+
+      }
+      
+      (document, 'script', 'facebook-jssdk'));
+
     </script>
    
   </body>

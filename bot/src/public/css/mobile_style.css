@@ -1,6 +1,6 @@
 @import "./pc.css";
 /* ipad */
-@media only screen and (min-width: 529.9px) and (max-width: 800px) {
+@media only screen and (min-width: 529.9px) and (max-width: 400px) {
     html{
       background: coral;
     }

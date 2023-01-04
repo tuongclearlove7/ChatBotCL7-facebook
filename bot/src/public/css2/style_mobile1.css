@@ -1,0 +1,18 @@
+@media only screen and (max-width: 435px){
+
+    .image_git{
+
+         position: fixed;
+         top: 0px;
+         left: 0px;
+         z-index: 2;
+    }
+
+    .image_git img{
+
+        width: 400px;
+        height: 300px;
+        opacity: 0.2;
+    }
+
+}

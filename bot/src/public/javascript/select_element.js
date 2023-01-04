@@ -6,6 +6,8 @@ list_cards[3] = "p";
 list_cards[4] = "img";
 list_cards[5] = "span";
 list_cards[6] = "html";
+list_cards[7] = "li";
+
 
 for(let index in list_cards){
 
@@ -17,13 +19,19 @@ for(let index in list_cards){
 let getElement = document.querySelectorAll(list_cards[6]);
 
 let counts = 0;
+
 for (let j in  getElement){ 
+
     getElement[j].onclick = (event) => { 
+
         let e = event.target;
         let myobj = {
+
             Index : counts++,
             Object : e,
+
             getObj : function(){
+
                 return this.Object;// this or myobj
             },
         }
