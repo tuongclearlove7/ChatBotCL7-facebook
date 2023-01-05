@@ -31,25 +31,23 @@ z-index: 100;
 
 .iconGithub a{
 
-position: relative;
+        position: relative;
 
-color: white;
+        color: white;
 
-font-size: 30px;
+        font-size: 30px;
 
-text-decoration: none;
+        text-decoration: none;
 
-margin: 0 auto;
+        margin: auto;
 
-display: block;
+        display: block;
 
-margin: 0px auto;
+        width: 27px;
 
-width: 27px;
+        top: 352px;
 
-top: 352px;
-
-left: -79px;
+        left: -79px;
 }
 
 .iconFacebook a{
@@ -62,7 +60,7 @@ font-size: 30px;
 
 text-decoration: none;
 
-margin: 0px auto;
+margin: auto;
 
 display: block;
 
@@ -89,7 +87,7 @@ display: block;
 
 width: 25px;
 
-margin: 0 auto;
+margin: auto;
 
 left: 85px;
 }
