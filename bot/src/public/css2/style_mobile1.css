@@ -1,5 +1,32 @@
 @media only screen and (max-width: 435px){
 
+    .header1 {
+        height: 50px;
+        width: 100%;
+        background-color: #11122f;
+        border: 1px solid white;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 100;
+    }
+
+    .nickname{
+
+        text-align: center;
+        position: fixed;
+        margin: 0 auto;
+        display: block;
+        left: 100px;
+        right: 90px;
+    }
+
+    .menu{
+
+        z-index: 0;
+        width: 100%;
+    }
+
     .image_git{
 
          position: fixed;
@@ -13,6 +40,144 @@
         width: 400px;
         height: 300px;
         opacity: 0.2;
+    }
+    
+    .layout_after{
+
+        display: none;
+    }
+
+    .card_create{
+
+        position: fixed;
+
+        display: block;
+
+        margin: auto;
+
+        padding: 0px;
+
+        top: 413px;
+
+        left: 4.2%;
+
+        right: 17px;
+
+        height: 100%;
+
+        width: 345px;
+
+        background: inherit;
+
+        z-index: 40;
+
+        border-radius: 10px;
+
+        /* box-shadow: 0 0 0 5px rgb(255 255 255 / 50%); */
+
+        background-image: linear-gradient(#091237, #000000), linear-gradient(to right, #f7faff, #ffffff, #ffffff);
+
+}
+
+    .label1 {
+        color: aliceblue;
+        font-family: Fira Code,Monaco,Consolas,Ubuntu Mono,monospace;
+        position: relative;
+        top: -32px;
+        left: 35px;
+        font-size: 8px;
+        z-index: 6;
+    }
+
+    .label2 {
+        color: aliceblue;
+        font-family: Fira Code,Monaco,Consolas,Ubuntu Mono,monospace;
+        position: relative;
+        top: -33px;
+        left: 5px;
+        font-size: 8px;
+    }
+
+    .input1 {
+        position: relative;
+        display: block;
+        margin: 0px auto;
+        top: -50px;
+        width: 210px;
+        border-radius: 25px;
+    }
+
+    .input2 {
+        position: relative;
+        display: block;
+        margin: 0px auto;
+        top: -50px;
+        width: 210px;
+        border-radius: 25px;
+    }
+
+    #newCreate {
+        position: relative;
+        top: -25px;
+        display: block;
+        margin: 0px auto;
+        width: 70px;
+        height: 20px;
+        font-size: 15px;
+        font-family: Fira Code,Monaco,Consolas,Ubuntu Mono,monospace;
+        transition: all 1s ease;
+        background: rgb(28, 28, 28);
+        color: aliceblue;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    .text {
+        position: relative;
+        color: #ffffff;
+        font-family: Fira Code,Monaco,Consolas,Ubuntu Mono,monospace;
+        text-decoration: none;
+        font-size: 10px;
+        top: 0px;
+        left: 95px;
+        width: 250px;
+    }
+
+    .iconGithub a {
+        position: relative;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        margin: 0 auto;
+        top: 220px;
+        left: 100px;
+    }
+
+    .iconFacebook a {
+        position: relative;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        margin: 0px auto;
+        display: block;
+        left: 165px;
+        top: 200px;
+    }
+
+    .iconInstagram a {
+        position: relative;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        top: 180px;
+        display: block;
+        margin: 0 auto;
+        left: 225px;
+    }
+
+    #list_api2{
+
+        display: none;
     }
 
 }

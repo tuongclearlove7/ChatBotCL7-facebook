@@ -189,6 +189,8 @@ background: #999999;
 
 bottom: 0px;
 
+left: 0px;
+
 height: 500px;
 
 width: 100%;
@@ -200,14 +202,11 @@ z-index: 0;
 
 position: fixed;
 
-/* left: 45%; */
-
 display: block;
 
 margin: auto;
 
-top: 340px;
-
+top: 348px;
 left: 45%;
 
 height: 100%;

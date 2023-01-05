@@ -178,4 +178,15 @@ function hello(){
     alert("Hello world ^^ \nBây giờ là : "+present+"\nChúc bạn ngủ ngon <3");
 }
 
+var knowlegdeBlock = document.querySelector("#list_api");
+
+var cardBlock = document.querySelector(".layout_after");
+ 
+
+if (knowlegdeBlock.style.display === "block") {
+
+
+    cardBlock.style.display = "none";
+
+}
 
