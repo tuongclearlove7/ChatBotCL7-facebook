@@ -23,7 +23,7 @@
 
     .menu{
 
-        z-index: 0;
+        z-index: 50;
         width: 105%;
     }
 
@@ -44,7 +44,8 @@
     
     .layout_after{
 
-        display: none;
+        opacity: 0.2;
+        z-index: -10;
     }
 
     .card_create{
@@ -138,7 +139,7 @@
         text-decoration: none;
         font-size: 10px;
         top: 0px;
-        left: 95px;
+        left: 50px;
         width: 250px;
     }
 
@@ -149,7 +150,7 @@
         text-decoration: none;
         margin: 0 auto;
         top: 220px;
-        left: 100px;
+        left: -65px;
     }
 
     .iconFacebook a {
@@ -159,7 +160,7 @@
         text-decoration: none;
         margin: 0px auto;
         display: block;
-        left: 165px;
+        left: 0px;
         top: 200px;
     }
 
@@ -171,7 +172,7 @@
         top: 180px;
         display: block;
         margin: 0 auto;
-        left: 225px;
+        left: 70px;
     }
 
     #list_api2{

@@ -5,7 +5,8 @@ html{
 
 body{
 
-background-color: #d8d8d8;
+background-color: aliceblue;
+scroll-behavior: smooth;
 
 max-width: 100%;
 }
@@ -112,13 +113,13 @@ left: 100px;
 border-radius: 25px;
 }
 
-.header2{
+.header_item_2{
 
 position: fixed;
 
 border: 1px solid white;
 
-background: white;
+background: #333332;
 
 height: 50px;
 
@@ -147,7 +148,7 @@ z-index: 99;
     left: 0px;
     width: 400px;
     height: 100%;
-    z-index: 1;
+    z-index: 50;
     opacity: 0.8;
 
 }
@@ -425,9 +426,59 @@ width: 250px;
     left: 80px;
 }
 
+.item1, .item2, .item3, .item4, .item5{
 
+    position: fixed;
+    display: block;
+    white-space: pre;
+    text-decoration: none;
+    font-family: Fira Code,Monaco,Consolas,Ubuntu Mono,monospace;
+    color: #ffffff;
+    background-color: #333332;
+    transition: all 1s ease;
+   
+    border-radius: 5px;
+    top: 1.5px;
+    margin: 0px 25px auto;
+    padding: 15px;
+    
+}
 
+.item1{
 
+    
+    left: 600px;
+}
+
+.item2{
+
+    
+    left: 750px;
+}
+
+.item3{
+
+    left: 900px;
+}
+
+.item4{
+
+   
+    left: 1050px;
+}
+
+.item5{
+
+    
+    left: 1200px;
+}
+
+.item1:hover, .item2:hover, .item3:hover, .item4:hover, .item5:hover{
+
+    background-color: #414141;
+    color: white;
+    
+}
 
 
 
