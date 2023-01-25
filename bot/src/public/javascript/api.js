@@ -72,9 +72,28 @@ let myobject = {
 console.log(myobject.myinfo())
 console.log(myobject.getkey(mykey))
 
+let list_api = "http://localhost:3000/newfeed";
 
 
 
+function start(){
+
+    getValueAPI(function(api){
+
+            console.log(api);
+    });
+}
+
+start();
+
+function getValueAPI(callback){
+
+    fetch(list_api).then(function(response){
+
+        return response.json();
+    
+    }).then(callback);
+}
 
 
 

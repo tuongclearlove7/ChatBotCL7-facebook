@@ -4,12 +4,6 @@ let list_knowledge = "http://localhost:3000/newfeed";
 function start(){
 
     getKnowledge(renderKnowledge);
-
-    getKnowledge(function(myAPI){
-
-        console.log(myAPI);
-    });
-
     handleCreateForm();
 
 }
@@ -167,15 +161,4 @@ function handleDeleteKnowlegde(id){
 }
 
 
-function hello(){
-
-    
-    let date = new Date();
-    let hours = date.getHours();
-    let minutes = date.getMinutes();
-    let seconds = date.getSeconds();
-    let present = 'Time : ' + hours + ':'+ minutes + ':'+seconds;
-    
-    alert("Hello world ^^ \nBây giờ là : "+present+"\nChúc bạn ngủ ngon <3");
-}
 

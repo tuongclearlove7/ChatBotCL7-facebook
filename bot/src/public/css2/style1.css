@@ -5,10 +5,10 @@ html{
 
 body{
 
-background-color: aliceblue;
-scroll-behavior: smooth;
+    background-color: aliceblue;
+    scroll-behavior: smooth;
 
-max-width: 100%;
+    max-width: 100%;
 }
 
 .header1{
@@ -194,7 +194,7 @@ z-index: 99;
 
 .layout_after{
 
-position: fixed;
+position: absolute;
 
 background: #999999;
 
@@ -343,7 +343,7 @@ border-radius: 5px;
     opacity: 1;
 }
 
-.text{
+.welcomeToWeb{
 
 position: relative;
 
@@ -366,7 +366,7 @@ top: 80px;
 width: 250px;
 }
 
-.text:hover{
+.welcomeToWeb:hover{
 
     color: royalblue;
 }
@@ -426,7 +426,7 @@ width: 250px;
     left: 80px;
 }
 
-.item1, .item2, .item3, .item4, .item5{
+.timer,.item1, .item2, .item3, .item4, .item5{
 
     position: fixed;
     display: block;
@@ -441,6 +441,12 @@ width: 250px;
     top: 1.5px;
     margin: 0px 25px auto;
     padding: 15px;
+    
+}  
+
+.timer{
+
+    left: 450px;
     
 }
 
@@ -480,16 +486,56 @@ width: 250px;
     
 }
 
+.page2{
 
 
+    position: relative;
+    display: block;
+    margin: 0px auto;
+    top: 90px;
+    left: 200px;
+    width: 400px;
+    transition: all 1s ease;
+    
+
+}
+
+.page2 p{
 
 
+    color: #333332;
+    font-family: Fira Code,Monaco,Consolas,Ubuntu Mono,monospace;
+
+}
+
+.back_to_top {
+
+    position: fixed;
+    display: block;
+    margin: 0px auto;
+    width: 45px;
+    height: 45px;
+    bottom: 50px;
+    right: 35px;
+    text-decoration: none;
+    z-index: 10;
+}
 
 
+.back_to_top i {
 
+    color: #333332;
+    font-size: 80px;
+    transform: rotate(360deg);
+    transition: all 0.5s ease;
+    
+    
+}
 
+.back_to_top i:hover{
 
-
+    transform: rotate(180deg);
+}
 
 
 

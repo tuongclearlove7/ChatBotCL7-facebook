@@ -25,6 +25,7 @@ for (let j in  getElement){
     getElement[j].onclick = (event) => { 
 
         let e = event.target;
+        event.preventDefault();
         let myobj = {
 
             Index : counts++,
