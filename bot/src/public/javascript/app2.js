@@ -89,12 +89,6 @@ function start_app(run){
 
     switch(run){
 
-        case false : 
-
-            console.log("Application is shutting down");
-
-        break;
-
         case true:
 
             setTimeout(function(){
@@ -117,6 +111,12 @@ function start_app(run){
                 }
 
             },3000);
+
+        break;
+
+        case false : 
+
+            console.log("Application is shutting down");
 
         break;
 
