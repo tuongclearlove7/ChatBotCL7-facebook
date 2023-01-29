@@ -1,11 +1,10 @@
-
 let list_knowledge = "http://localhost:3000/newfeed";
 
 function start(){
 
     getKnowledge(renderKnowledge);
     handleCreateForm();
-
+    
 }
 
 start();

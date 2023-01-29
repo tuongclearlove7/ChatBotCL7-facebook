@@ -508,6 +508,31 @@ width: 250px;
 
 }
 
+.page3 , .page4 h1, .page5 h1{
+
+    position: relative;
+    display: block;
+    margin: 0px auto;
+    top: 90px;
+    left: 200px;
+    width: 300px;
+    transition: all 1s ease;
+}
+
+.render-mydata{
+
+    position: relative;
+    display: block;
+    transition: all 1s ease;
+    margin: 0px auto;
+    color: #0b1221;
+    font-family: Fira Code,Monaco,Consolas,Ubuntu Mono,monospace;
+    top: 90px;
+    left: 230px;
+    width: 450px;
+    
+}
+
 .back_to_top {
 
     position: fixed;
