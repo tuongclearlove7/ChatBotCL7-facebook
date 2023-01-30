@@ -2,7 +2,7 @@ const static_App = (
 
     function(){
 
-        var obj = [
+         var obj = [
                       {
                          me : {
 
@@ -23,9 +23,10 @@ const static_App = (
                           }
                       }
                   ];
-
+        
         const data = [obj];
 
+    
             return {
 
                 set(...value){
@@ -128,8 +129,7 @@ function start_app(run){
     }
 }
 
-start_app(true)
-
+start_app(true);
 
 
 
