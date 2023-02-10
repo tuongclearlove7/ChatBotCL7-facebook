@@ -1,5 +1,4 @@
 require("dotenv").config();
-
 import db from '../models/index.js';
 import { table } from "console";
 import { response, text } from "express";
@@ -9,8 +8,6 @@ import { handleMessage } from './Handle_Message.js';
 import { handlePostback } from './Handle_postback.js';
 
 const fs = require("fs");
-
-
 const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
 let VERIFY_TOKEN = process.env.VERIFY_TOKEN;
 
@@ -32,10 +29,13 @@ let getHomePage = async (req,res)=>{
 
   //      console.log(e);
   //    }
-    res.render('demoapp.ejs'); 
+  
+    console.log("reload app");
+
+    return res.render('index.ejs');
 }
 
-let postWebhook= (req,res)=>{
+let postWebhook = (req,res) =>{
 
     let body = req.body;
 
@@ -63,10 +63,10 @@ let postWebhook= (req,res)=>{
 
     else if (webhook_event.postback) {
 
-        handlePostback(sender_psid, webhook_event.postback);
+            handlePostback(sender_psid, webhook_event.postback);
 
-    };
-});
+        };
+    });
 
     res.status(200).send('EVENT_RECEIVED');
 
@@ -78,7 +78,7 @@ let postWebhook= (req,res)=>{
     }
 };
 
-let getWebhook = (req,res)=>{
+let getWebhook = (req,res) =>{
 
     console.log('verify token : ',VERIFY_TOKEN)
 
@@ -102,7 +102,7 @@ let getWebhook = (req,res)=>{
 };
 
 
-function callSendAPI(sender_psid, response) {
+export function callSendAPI(sender_psid, response) {
 
     let request_body = {
 
@@ -120,8 +120,8 @@ function callSendAPI(sender_psid, response) {
       "qs": { "access_token": PAGE_ACCESS_TOKEN },
       "method": "POST",
       "json": request_body
-    },
-      (err, res, body) => {
+
+    },(err, res, body) => {
 
         if (!err) {
 
@@ -141,10 +141,7 @@ module.exports = {
     postWebhook: postWebhook
 }
 
-export{
 
-  callSendAPI
-};
 
 
 

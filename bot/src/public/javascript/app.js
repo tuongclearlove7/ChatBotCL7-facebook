@@ -1,18 +1,44 @@
-let list_knowledge = "http://localhost:3000/newfeed";
 
-function start(){
+
+const static_privateData = (
+
+        function(){
+
+            // local variables
+
+            const apiData =  [{
+
+                list_knowledge : 'http://localhost:3000/newfeed', 
+
+                createbtn : document.getElementById('newCreate'),
+
+            }];
+
+            return {
+        
+                get(index){
+
+                    return apiData[index];
+                }
+            }
+        }
+)();
+ 
+function app(){
 
     getKnowledge(renderKnowledge);
     handleCreateForm();
-    
+
 }
 
-start();
-
+app();
 
 function getKnowledge(call){
 
-    fetch(list_knowledge).then(function (response) {
+    fetch(static_privateData.get(0).list_knowledge)
+    
+
+    .then(function (response) {
 
         console.log("FAKE API is running...");
 
@@ -42,17 +68,15 @@ function errorMessage(message) {
 
     let my_promise = new Promise(function (resolve, reject){
 
-        reject(message);
+        reject(message);        
 
     });
 
-    my_promise.then(function(success){
+    my_promise.then(function (success) {
 
-        console.log(success);
+        console.log(success)
 
-     }).catch(function(err){
-
-        console.log(err);
+    }).catch(function(err){
 
         let notification = document.querySelector('#list_api2');
 
@@ -77,16 +101,16 @@ function createFeed(data, call){
         body: JSON.stringify(data),
     }
 
-    fetch(list_knowledge, option)
+    fetch(static_privateData.get(0).list_knowledge, option)
 
         .then(function(response){
             
+            console.log(response);
             response.json();
 
-        }).then(call)
-        
-        .catch(async function(){
+        }).then(call).catch(async function(error){
 
+        
             await errorMessage("Hệ thống đang bảo trì");
 
     });
@@ -96,21 +120,21 @@ function renderKnowledge(myKnowledge){
 
     var listKnowlegdeBlock = document.querySelector("#list_api");
 
+
     var html = myKnowledge.map((knowledge) => {
+
 
         return `<li class="knowlegdeItem_id_${knowledge.id}">
                 <p>${knowledge.name}</p>
                 <p>${knowledge.description}</p>
-                <button class="deleteFeed" onclick = "handleDeleteKnowlegde(${knowledge.id})">
+                <button class="deleteFeed" onclick = "handleDeleteKnowlegde(${knowledge.id});">
                 Xóa</button>
                 </li>`;
 
     });
 
     listKnowlegdeBlock.innerHTML = html.join('');
-}
-
-var createbtn = document.getElementById('newCreate');
+} 
 
 function handleCreateForm(){
     
@@ -118,14 +142,14 @@ function handleCreateForm(){
         var description = document.querySelector('input[name="description"]').value;
         var formData = {
 
-            name: name,
-            description: description
+            name : name,
+            description : description
         }
 
-    createFeed(formData, function(){
+        createFeed(formData, function(){
 
-        getKnowledge(renderKnowledge);
-    
+            getKnowledge(renderKnowledge);
+        
     });
 }
 
@@ -141,22 +165,23 @@ function handleDeleteKnowlegde(id){
         },
     }
 
-    fetch(list_knowledge + "/" + id, option)
+    fetch(static_privateData.get(0).list_knowledge + "/" + id, option)
 
-        .then(
-        
-        function(response){
+        .then(function(response){
+
+            console.log(response.url);
             
             response.json();
         })
 
         .then(function(){
 
-            let knowledgeItem =   document.querySelector(".knowlegdeItem_id_" + id);
+            let knowledgeItem = document.querySelector(".knowlegdeItem_id_" + id);
             
             knowledgeItem.remove();
-        });
+    });
 
+    console.log(id);
 }
 
 
