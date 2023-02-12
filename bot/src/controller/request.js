@@ -9,9 +9,24 @@ const fs = require("fs");
 
 let app_request = async (req,res)=>{
     
-      console.log("reload app");
-  
-      return res.render('test1.ejs');
+    try{
+
+        let data = await db.User.findAll();
+   
+       // console.log(data);
+   
+        return res.render('test1.ejs',{
+   
+               data : JSON.stringify(data),
+            });
+       
+        }
+        catch(e){
+   
+           console.log(e);
+         }
+     
+       console.log("reload app");
   }
 
 module.exports = {

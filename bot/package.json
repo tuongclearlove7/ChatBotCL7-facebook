@@ -5,8 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec babel-node src/server.js"
+    "start": "nodemon --exec babel-node src/server.js",
+    "start2":"json-server --watch object.json"
   },
+
   "author": "Clearlove7",
   "license": "ISC",
   "dependencies": {

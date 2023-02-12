@@ -7,32 +7,31 @@ import request from "request";
 import { handleMessage } from './Handle_Message.js';
 import { handlePostback } from './Handle_postback.js';
 
+
 const fs = require("fs");
 const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
 let VERIFY_TOKEN = process.env.VERIFY_TOKEN;
 
 let getHomePage = async (req,res)=>{
 
-  // try{
+   try{
 
-  //   let data = await db.User.findAll();
+     let data = await db.User.findAll();
 
-  //   console.log(data);
+     console.log(data);
 
-  //   return res.render('demoapp.ejs',{
+     return res.render('index.ejs',{
 
-  //          data : JSON.stringify(data),
-  //       });
+            data : JSON.stringify(data),
+         });
     
-  //   }
-  //   catch(e){
+     }
+     catch(e){
 
-  //      console.log(e);
-  //    }
+        console.log(e);
+      }
   
     console.log("reload app");
-
-    return res.render('index.ejs');
 }
 
 let postWebhook = (req,res) =>{

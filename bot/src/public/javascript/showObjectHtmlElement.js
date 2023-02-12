@@ -4,7 +4,7 @@ import {start_app,static_App} from './app2.js';
 
 function start(){
 
-    
+    start_app(true);
     renderShowInputBlock(static_App.get(0).block);
     renderShowPage();
     backToTop();
@@ -13,7 +13,7 @@ function start(){
     getVisitors("visits");
     getIPAddress();
     music();
-    start_app(true);
+    
     
 }
 

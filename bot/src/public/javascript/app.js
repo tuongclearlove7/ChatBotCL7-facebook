@@ -60,6 +60,7 @@ function getKnowledge(call){
         return listKnowlegdeBlock.innerHTML = `
                 <h1 style="font-size:23px;">${error}</h1>
                             <p>${notification}</p>
+                            <p ><%=data %></p>
         <div class="errImg"><img src="${link_imgErr1}" alt=""></div>`;
     })
 }

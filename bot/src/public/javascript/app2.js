@@ -1,18 +1,18 @@
 export const static_App = (
 
-    function(){
+    function () {
 
         const data = [
 
             {
-                item :  `<a href="javascript:void(0);" class="timer" ></a>
+                item: `<a href="javascript:void(0);" class="timer" ></a>
                 <a href="javascript:void(0);" class="item1" >Page 1</a>
                 <a href="javascript:void(0);" class="item2" >Page 2</a>
-                <a href="javascript:void(0);" class="item3" >Page 3</a>
+                <a href="http://localhost:8080/request" class="item3" >Page 3</a>
                 <a href="javascript:void(0);" class="item4" >Page 4</a>
                 <a href="javascript:void(0);" class="item5" >Page 5</a>`,
 
-                block : `
+                block: `
                         <div class="card_create">
                         <div class="iconGithub"><a class="fa fa-github" href="https://github.com/tuongclearlove7"></a></div>
                         <div class="iconFacebook"><a class="fa fa-facebook" href="https://www.facebook.com/Ytttuong1"></a></div>
@@ -32,10 +32,10 @@ export const static_App = (
                         <!-- <div><img class="apiImage"  src="./image/api.png" alt=""></div> -->
                         </div>
                         </div>`,
-                itemModel : "",
-                top : ` <a href="javascript:void(0);" class="back_to_top" id = "top">
+
+                top: ` <a href="javascript:void(0);" class="back_to_top" id = "top">
                                         <i class="fa fa-caret-down"></i></a>`,
-                pagE1 : `
+                pagE1: `
                         <div class="card_create">
                         <div class="iconGithub"><a class="fa fa-github" href="https://github.com/tuongclearlove7"></a></div>
                         <div class="iconFacebook"><a class="fa fa-facebook" href="https://www.facebook.com/Ytttuong1"></a></div>
@@ -55,7 +55,7 @@ export const static_App = (
                         <!-- <div><img class="apiImage"  src="./image/api.png" alt=""></div> -->
                         </div>
                         </div>`,
-                pagE2 : `
+                pagE2: `
                         <div class="page2">
                         <p>
                         DNS documentation
@@ -85,157 +85,167 @@ export const static_App = (
                         - link : https://www.youtube.com/watch?v=zEmUuNFBgN8&list=PLTk5ZYSbd9MhMmOiPhfRJNW7bhxHo4q-K
                     </p>
                     </div>`,
-                pagE3 : `<div class="page3"><p align='left'><a href='https://github.com/tuongclearlove7'><img height='180em' src='https://github-readme-stats-eight-theta.vercel.app/api?username=tuongclearlove7&show_icons=true&theme=algolia&include_all_commits=true&count_private=true'/><img height='180em' src='https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=tuongclearlove7&layout=compact&langs_count=8&theme=algolia'/></a></p></div>`,
-                pagE4 : `<div class="page4"><h1>Page4</h1></div>`,
-                pagE5 : `<div class="page5"><h1>Page5</h1></div>`,
+                pagE3: `<div class="page3"><p align='left'><a href='https://github.com/tuongclearlove7'><img height='180em' src='https://github-readme-stats-eight-theta.vercel.app/api?username=tuongclearlove7&show_icons=true&theme=algolia&include_all_commits=true&count_private=true'/><img height='180em' src='https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=tuongclearlove7&layout=compact&langs_count=8&theme=algolia'/></a></p></div>`,
+                pagE4: `<div class="page4"><h1><%=data %></h1></div>`,
+                pagE5: `<div class="page5"><h1>Page5</h1></div>`,
 
-                inputBlock : document.querySelector("#layout_after_id"),
+                inputBlock: document.querySelector("#layout_after_id"),
 
-                getIDFooter : document.querySelector("#footer"),
+                getIDFooter: document.querySelector("#footer"),
 
-                visits : 0,
+                visits: 0,
 
-                audio : new Audio("../image/anhkhongthathu.mp3"),
+                audio: new Audio("../image/anhkhongthathu.mp3"),
 
-                author : 'clearlove7',
+                author: 'clearlove7',
 
-                list_knowledges : 'http://localhost:3000/newfeed',
+                list_knowledges: 'http://localhost:3000/newfeed',
 
-                list_abouts : "http://localhost:3000/about",
+                list_abouts: "http://localhost:3000/about",
 
-                list_applications : "http://localhost:3000/application",
-                
-                list_courses : "http://localhost:3000/courses",
+                list_applications: "http://localhost:3000/application",
 
-                myabout : callbacks => {
-                    
-                    fetch(data[0].list_abouts)
-    
+                list_courses: "http://localhost:3000/courses",
+
+                list_pages: "http://localhost:3000/pages",
+
+                mypage : callbacks => {
+
+                    fetch(data[0].list_pages)
+
                     .then(function (response) {
-                
+
                         return response.json();
 
                     }).then(callbacks)
                 },
 
-                app : callbacks => {
-                    
-                    fetch(data[0].list_applications)
-    
-                    .then(function (response) {
-                
-                        return response.json();
+                myabout : callbacks => {
 
-                    }).then(callbacks)
+                    fetch(data[0].list_abouts)
+
+                        .then(function (response) {
+
+                            return response.json();
+
+                        }).then(callbacks)
+                },
+
+                app : callbacks => {
+
+                    fetch(data[0].list_applications)
+
+                        .then(function (response) {
+
+                            return response.json();
+
+                        }).then(callbacks)
                 },
             }
         ];
 
 
-            return {
+        return {
 
-                set(...value){
+            set(...value) {
 
-                    for (var i = 0; i < value.length; i++){
+                for (var i = 0; i < value.length; i++) {
 
-                        data.push(value[i]);
-                    }
-                },
-
-                get(index){
-
-                    for (var i = 0; i < data.length; i++){
-
-                        if(index === i){
-
-                            break;
-
-                            return data[i];
-                        }
-                    }
-
-                    return data[index];
-                },
-
-                gets_Tostring(){
-
-                    var toString = "";
-
-                    for (var i = 0; i < data.length; i++){
-
-                        toString = toString + data[i];
-                    }
-
-                    return toString;
-                },
-
-                delete_toIndex(index){
-
-                    delete data[index];
-
-                },
-
-                gets(){
-
-                    for (var i = 0; i < data.length; i++){
-
-                            console.log(data[i]);
-                    }
-                },
-
-                get_index(value) {
-
-                    return data.indexOf(value);
+                    data.push(value[i]);
                 }
+            },
+
+            get(index) {
+
+                for (var i = 0; i < data.length; i++) {
+
+                    if (index === i) {
+
+                        break;
+
+                        return data[i];
+                    }
+                }
+
+                return data[index];
+            },
+
+            gets_Tostring() {
+
+                var toString = "";
+
+                for (var i = 0; i < data.length; i++) {
+
+                    toString = toString + data[i];
+                }
+
+                return toString;
+            },
+
+            delete_toIndex(index) {
+
+                delete data[index];
+
+            },
+
+            gets() {
+
+                for (var i = 0; i < data.length; i++) {
+
+                    console.log(data[i]);
+                }
+            },
+
+            get_index(value) {
+
+                return data.indexOf(value);
             }
         }
+    }
 )();
 
 
+export function start_app(run) {
 
-
-
-export function start_app(run){
-
-    switch(run){
+    switch (run) {
 
         case true:
 
-                while(run){
+            while (run) {
 
-                    var obj = Object.values(static_App.get(0))
+                var obj = Object.values(static_App.get(0))
 
-                    static_App.get(0).myabout(about => console.log(about));
+                static_App.get(0).myabout(about => console.log(about));
 
-                    var model = document.querySelector("#layout_after_id");
+                var model = document.querySelector("#layout_after_id");
 
-                        static_App.get(0).app(function(calls){
+                static_App.get(0).app(function (calls) {
 
-                        console.log(calls);
-                        
-                        model.innerHTML = `<div class="render-mydata">
+                    console.log(calls);
+
+                    model.innerHTML = `<div class="render-mydata">
                                         <h1 style="text-align:left;">GitHub Analytics</h1>
                                         ${calls[0].analytics}
                                         </div>`
-                        
-                    });
+
+                });
+
+                break;
+            };
 
             break;
-        };
 
-        break;
-
-        case false :
+        case false:
 
             console.log("Application is shutting down");
 
-        break;
+            break;
 
         default:
 
             console.log(true + " or " + false);
 
-        break;
+            break;
     }
 }
 

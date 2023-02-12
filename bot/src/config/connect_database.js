@@ -10,8 +10,8 @@ const sequelize = new Sequelize('tuongclearlove7', 'root',null, {
 
 
 let connect_db = async() =>{
-    try {
 
+    try {
 
         await sequelize.authenticate();
 
