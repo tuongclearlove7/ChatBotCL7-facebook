@@ -33,7 +33,9 @@ let getHomePage = async (req,res)=>{
   
     console.log("reload app");
 
-    return res.render('index.ejs');
+    //return res.render('index.ejs');
+    return res.send('hello world!');
+
 }
 
 let postWebhook = (req,res) =>{
