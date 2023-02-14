@@ -26,7 +26,7 @@ let app_request = async (req,res)=>{
            console.log(e);
          }*/
      
-       
+         console.log("reload app");
 
        return res.render('test1.ejs');
   }
