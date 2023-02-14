@@ -9,7 +9,7 @@ const fs = require("fs");
 
 let app_request = async (req,res)=>{
     
-    try{
+    /*try{
 
         let data = await db.User.findAll();
    
@@ -24,9 +24,11 @@ let app_request = async (req,res)=>{
         catch(e){
    
            console.log(e);
-         }
+         }*/
      
-       console.log("reload app");
+       
+
+       return res.render('test1.ejs');
   }
 
 module.exports = {

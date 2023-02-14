@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 initWrbrouter(app);
-connect_db(); //run database
+//connect_db(); //run database
 
 let port = process.env.PORT || 8080;
 

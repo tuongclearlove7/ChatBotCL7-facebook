@@ -9,7 +9,7 @@ let router = express.Router();
 let initWrbrouter = (app) => {
 
     router.get("/",chatbotcontroller.getHomePage);
-    router.get("/request",request.app_request);
+   // router.get("/request",request.app_request);
     router.get("/webhook", chatbotcontroller.getWebhook);
     router.post("/webhook", chatbotcontroller.postWebhook);
     

@@ -14,7 +14,7 @@ let VERIFY_TOKEN = process.env.VERIFY_TOKEN;
 
 let getHomePage = async (req,res)=>{
 
-   try{
+   /*try{
 
      let data = await db.User.findAll();
 
@@ -29,9 +29,11 @@ let getHomePage = async (req,res)=>{
      catch(e){
 
         console.log(e);
-      }
+      }*/
   
     console.log("reload app");
+
+    return res.render('demoapp.ejs');
 }
 
 let postWebhook = (req,res) =>{
