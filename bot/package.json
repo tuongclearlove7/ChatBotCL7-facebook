@@ -22,7 +22,6 @@
     "geopoint": "^1.0.1",
     "json-server": "^0.17.1",
     "mysql2": "^2.3.3",
-    "nodemon": "^2.0.15",
     "parser": "^0.1.4",
     "request": "^2.88.2",
     "sequelize": "^6.21.3"
