@@ -12,7 +12,7 @@ const fs = require("fs");
 const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
 let VERIFY_TOKEN = process.env.VERIFY_TOKEN;
 
-let getHomePage = async (req,res)=>{
+let getHomePage = async (req,res, next)=>{
 
    /*try{
 
@@ -30,12 +30,18 @@ let getHomePage = async (req,res)=>{
 
         console.log(e);
       }*/
+
+      res.setHeader('Access-Control-Allow-Origin', process.env.REACT);
+      res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+      res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+      res.setHeader('Access-Control-Allow-Credentials', true);
   
-    console.log("reload app");
+      next();
+  
+      console.log("reload app");
 
-    //return res.render('index.ejs');
-    return res.send('hello world!');
-
+      return res.render('index.ejs');
+    // return res.send('hello world!');
 }
 
 let postWebhook = (req,res) =>{

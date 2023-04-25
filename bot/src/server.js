@@ -6,16 +6,14 @@ import connect_db from './config/connect_database'
 require("dotenv").config();
 
 let app = express();
+let port = process.env.PORT || 8080;
+let local = process.env.REACT
 
 viewEngine(app);
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-
 initWrbrouter(app);
 //connect_db(); //run database
-
-let port = process.env.PORT || 8080;
 
 app.listen(port, () => {
 

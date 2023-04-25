@@ -10,7 +10,6 @@ function ConvertStringToHex(str) {
   
   var str = prompt("input string : ")//data
   ConvertStringToHex(str);//Output: 3ndc0d3c1700643ndc0d3c1700613ndc0d3c1700743ndc0d3c170061
-  let  con = "stirng";
   
 
 

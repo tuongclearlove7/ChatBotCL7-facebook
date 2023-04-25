@@ -1,5 +1,3 @@
-
-
 const static_privateData = (
 
         function(){
@@ -151,7 +149,7 @@ function handleCreateForm(){
 
             getKnowledge(renderKnowledge);
         
-    });
+        });
 }
 
 

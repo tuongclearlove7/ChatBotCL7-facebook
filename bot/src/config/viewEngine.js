@@ -7,11 +7,6 @@ let configViewEngine = (app) => {
     app.set("views","./src/views");
 };
 
-
-function myapp(){
-
-}
-
 module.exports = configViewEngine;  
 
 //export default configViewEngine;
